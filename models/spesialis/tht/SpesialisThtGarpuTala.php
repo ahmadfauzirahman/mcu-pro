@@ -80,4 +80,13 @@ class SpesialisThtGarpuTala extends \yii\db\ActiveRecord
             'status_pemeriksaan' => 'Status Pemeriksaan',
         ];
     }
+
+    /**
+     * {@inheritdoc}
+     * @return SpesialisThtGarpuTalaQuery the active query used by this AR class.
+     */
+    public static function find()
+    {
+        return new SpesialisThtGarpuTalaQuery(get_called_class());
+    }
 }

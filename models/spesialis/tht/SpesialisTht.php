@@ -162,4 +162,13 @@ class SpesialisTht extends \yii\db\ActiveRecord
             'tl_audiometri_periksa' => 'Tl Audiometri Periksa',
         ];
     }
+
+    /**
+     * {@inheritdoc}
+     * @return SpesialisThtQuery the active query used by this AR class.
+     */
+    public static function find()
+    {
+        return new SpesialisThtQuery(get_called_class());
+    }
 }

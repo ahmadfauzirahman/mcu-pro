@@ -167,4 +167,13 @@ class SpesialisAudiometri extends \yii\db\ActiveRecord
             'status_pemeriksaan' => 'Status Pemeriksaan',
         ];
     }
+
+    /**
+     * {@inheritdoc}
+     * @return SpesialisAudiometriQuery the active query used by this AR class.
+     */
+    public static function find()
+    {
+        return new SpesialisAudiometriQuery(get_called_class());
+    }
 }

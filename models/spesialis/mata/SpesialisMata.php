@@ -114,4 +114,13 @@ class SpesialisMata extends \yii\db\ActiveRecord
             'status_pemeriksaan' => 'Status Pemeriksaan',
         ];
     }
+
+    /**
+     * {@inheritdoc}
+     * @return SpesialisMataQuery the active query used by this AR class.
+     */
+    public static function find()
+    {
+        return new SpesialisMataQuery(get_called_class());
+    }
 }
