@@ -25,6 +25,9 @@ class AppAsset extends AssetBundle
         "assets/css/bootstrap.min.css",
         "assets/css/icons.min.css",
         "assets/css/app.min.css",
+
+        '../libs/toastr/css/toastr.min.css',
+        '../css/site.css',
     ];
     public $js = [
         // "assets/libs/jquery/jquery.min.js",
@@ -37,6 +40,10 @@ class AppAsset extends AssetBundle
         // "assets/js/pages/dashboard-2.init.js",
 
         // "assets/js/app.js",
+
+
+        '../libs/toastr/js/toastr.min.js',
+        '../js/site.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
