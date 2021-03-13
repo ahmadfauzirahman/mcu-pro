@@ -6,7 +6,7 @@
  * @Linkedin: linkedin.com/in/dickyermawan 
  * @Date: 2021-03-12 22:56:20 
  * @Last Modified by: Dicky Ermawan S., S.T., MTA
- * @Last Modified time: 2021-03-12 23:24:04
+ * @Last Modified time: 2021-03-14 00:13:30
  */
 
 use yii\helpers\Url;
@@ -42,17 +42,16 @@ use yii\helpers\Url;
                         <div class="col-lg-6">
                             <div>
                                 <a href="<?= Url::to(['spesialis-gigi/periksa']) ?>" class="dropdown-item">Gigi</a>
-                                <a href="ui-buttons.html" class="dropdown-item">Mata</a>
-                                <a href="ui-cards.html" class="dropdown-item">THT</a>
-                                <a href="ui-carousel.html" class="dropdown-item">Audiometri</a>
+                                <a href="<?= Url::to(['spesialis-mata/periksa']) ?>" class="dropdown-item">Mata</a>
+                                <a href="<?= Url::to(['spesialis-tht/periksa']) ?>" class="dropdown-item">THT</a>
+                                <a href="<?= Url::to(['spesialis-audiometri/periksa']) ?>" class="dropdown-item">Audiometri</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div>
-                                <a href="ui-carousel.html" class="dropdown-item">Tes Berbisik</a>
-                                <a href="ui-carousel.html" class="dropdown-item">Tes Garpu Tala</a>
+                                <a href="<?= Url::to(['spesialis-tes-berbisik/periksa']) ?>" class="dropdown-item">Tes Berbisik</a>
+                                <a href="<?= Url::to(['spesialis-tes-garpu-tala/periksa']) ?>" class="dropdown-item">Tes Garpu Tala</a>
                                 <a href="<?= Url::to(['spesialis-psikologi/periksa']) ?>" class="dropdown-item">Kejiwaan- Psikologi</a>
-                                <a href="ui-lightbox.html" class="dropdown-item">Kejiwaan</a>
                                 <a href="ui-modals.html" class="dropdown-item">Narkoba</a>
                             </div>
                         </div>

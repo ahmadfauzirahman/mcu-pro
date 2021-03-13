@@ -6,7 +6,7 @@
  * @Linkedin: linkedin.com/in/dickyermawan 
  * @Date: 2020-09-13 18:14:13 
  * @Last Modified by: Dicky Ermawan S., S.T., MTA
- * @Last Modified time: 2021-03-13 14:35:28
+ * @Last Modified time: 2021-03-14 00:16:34
  */
 
 use app\components\Helper;
@@ -45,13 +45,13 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="card">
             <div class="card-body">
 
-                <h4 class="card-title">
+                <h3>
                     <div style="text-align: center;">
                         Unit Medical Check Up
                         <br>
                         <?= Html::encode($this->title) ?>
                     </div>
-                </h4>
+                </h3>
                 <div class="mcu-spesialis-audiometri-form">
 
 
@@ -93,8 +93,8 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="col-sm-3">
                             <label for="">No. Rekam Medik</label>
                             <?php
-                            $model->no_rm = $no_rm;
-                            echo $form->field($model, 'no_rm')->textInput(['maxlength' => true, 'readonly' => true,])->label(false)
+                            $model->no_rekam_medik = $no_rm;
+                            echo $form->field($model, 'no_rekam_medik')->textInput(['maxlength' => true, 'readonly' => true,])->label(false)
                             ?>
                         </div>
                         <div class="col-sm-6">
@@ -616,7 +616,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                         <div class="row">
 
-                            <?php echo $form->field($modelPenata, 'no_rm')->hiddenInput()->label(false); ?>
+                            <?php echo $form->field($modelPenata, 'no_rekam_medik')->hiddenInput()->label(false); ?>
 
                             <div class="col-sm-3">
                                 <?php echo $form->field($modelPenata, 'jenis_permasalahan')->textArea(['rows' => 2]); ?>
@@ -641,7 +641,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             if (!$model->isNewRecord)
                                 echo Html::submitButton('Simpan', ['class' => 'btn btn-success']);
                             // if (!$model->isNewRecord && count($modelPenataList->all())) {
-                            //     echo Html::a('<i class="far fa-file-excel"></i> Cetak Hard Copy', ['/spesialis-mata/cetak-penata', 'no_rm' => $no_rm], ['target' => 'blank', 'data-pjax' => 0, 'class' => 'btn btn-info', 'style' => 'margin-left: 10px;']);
+                            //     echo Html::a('<i class="far fa-file-excel"></i> Cetak Hard Copy', ['/spesialis-mata/cetak-penata', 'no_rekam_medik' => $no_rekam_medik], ['target' => 'blank', 'data-pjax' => 0, 'class' => 'btn btn-info', 'style' => 'margin-left: 10px;']);
                             // }
                             Pjax::end();
                             ?>

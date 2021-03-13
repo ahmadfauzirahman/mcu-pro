@@ -1,7 +1,7 @@
 <?php
 
-use app\models\spesialis\BaseAR;
-use app\models\spesialis\McuPenatalaksanaanMcu;
+use app\models\BaseAR;
+use app\models\PenatalaksanaanMcu;
 use yii\helpers\Html;
 use yii\helpers\Url;
 
@@ -298,7 +298,7 @@ use yii\helpers\Url;
                         $model->kesimpulan == 'Normal';
                         echo $model->kesimpulan;
                     } else {
-                        $penata = McuPenatalaksanaanMcu::find()
+                        $penata = PenatalaksanaanMcu::find()
                             ->where(['jenis' => 'spesialis_mata'])
                             ->andWhere(['id_fk' => $model->id_spesialis_mata])
                             ->all();
@@ -359,10 +359,10 @@ use yii\helpers\Url;
                 <td class="col-2" style="text-align: center;border-right: 1px solid #000000;">
                     <br><br><br><br>
                     <b>
-                        <?= $model->updatedByTeks->pegawai->nama ?>
+                        <?= $model->updatedByTeks->pegawai->nama ?? 'Nama Dokter' ?>
                     </b>
                     <br>
-                    <?= $model->updatedByTeks->pegawai->no ?>
+                    <?= $model->updatedByTeks->pegawai->no ?? 'Id Dokter' ?>
                 </td>
             </tr>
         </tbody>

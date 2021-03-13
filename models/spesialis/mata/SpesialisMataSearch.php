@@ -21,7 +21,7 @@ class SpesialisMataSearch extends SpesialisMata
     {
         return [
             [['id_spesialis_mata', 'created_by', 'updated_by'], 'integer'],
-            [['no_rm', 'created_at', 'updated_at', 'persepsi_warna_mata_kanan', 'persepsi_warna_mata_kiri', 'kelopak_mata_kanan', 'kelopak_mata_kiri', 'konjungtiva_mata_kanan', 'konjungtiva_mata_kiri', 'kesegarisan_gerak_bola_mata_kanan', 'kesegarisan_gerak_bola_mata_kiri', 'skiera_mata_kanan', 'skiera_mata_kiri', 'lensa_mata_kanan', 'lensa_mata_kiri', 'kornea_mata_kanan', 'kornea_mata_kiri', 'bulu_mata_kanan', 'bulu_mata_kiri', 'tekanan_bola_mata_kanan', 'tekanan_bola_mata_kiri', 'penglihatan_3_dimensi_mata_kanan', 'penglihatan_3_dimensi_mata_kiri', 'virus_mata_tanpa_koreksi_mata_kanan', 'virus_mata_tanpa_koreksi_mata_kiri', 'virus_mata_dengan_koreksi_mata_kanan', 'virus_mata_dengan_koreksi_mata_kiri', 'lain_lain', 'kesimpulan', 'histori_data'], 'safe'],
+            [['no_rekam_medik', 'created_at', 'updated_at', 'persepsi_warna_mata_kanan', 'persepsi_warna_mata_kiri', 'kelopak_mata_kanan', 'kelopak_mata_kiri', 'konjungtiva_mata_kanan', 'konjungtiva_mata_kiri', 'kesegarisan_gerak_bola_mata_kanan', 'kesegarisan_gerak_bola_mata_kiri', 'skiera_mata_kanan', 'skiera_mata_kiri', 'lensa_mata_kanan', 'lensa_mata_kiri', 'kornea_mata_kanan', 'kornea_mata_kiri', 'bulu_mata_kanan', 'bulu_mata_kiri', 'tekanan_bola_mata_kanan', 'tekanan_bola_mata_kiri', 'penglihatan_3_dimensi_mata_kanan', 'penglihatan_3_dimensi_mata_kiri', 'virus_mata_tanpa_koreksi_mata_kanan', 'virus_mata_tanpa_koreksi_mata_kiri', 'virus_mata_dengan_koreksi_mata_kanan', 'virus_mata_dengan_koreksi_mata_kiri', 'lain_lain', 'kesimpulan', 'histori_data'], 'safe'],
             ['nama_no_rm', 'safe'],
         ];
     }
@@ -74,7 +74,7 @@ class SpesialisMataSearch extends SpesialisMata
             'updated_by' => $this->updated_by,
         ]);
 
-        $query->andFilterWhere(['ilike', 'no_rm', $this->no_rm])
+        $query->andFilterWhere(['ilike', 'no_rekam_medik', $this->no_rm])
             ->andFilterWhere(['ilike', 'persepsi_warna_mata_kanan', $this->persepsi_warna_mata_kanan])
             ->andFilterWhere(['ilike', 'persepsi_warna_mata_kiri', $this->persepsi_warna_mata_kiri])
             ->andFilterWhere(['ilike', 'kelopak_mata_kanan', $this->kelopak_mata_kanan])
