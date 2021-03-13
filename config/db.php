@@ -3,7 +3,7 @@
 if (YII_ENV_DEV) {
     return [
         'class' => 'yii\db\Connection',
-        'dsn' => 'pgsql:host=localhost;port=5432;dbname=tims-simrs',
+        'dsn' => 'pgsql:host=localhost;port=5432;dbname=simrs',
         'username' => 'postgres',
         'password' => '',
         'charset' => 'utf8',
@@ -22,7 +22,7 @@ if (YII_ENV_DEV) {
 } else {
     return [
         'class' => 'yii\db\Connection',
-        'dsn' => 'pgsql:host=localhost;port=5432;dbname=tims-simrs',
+        'dsn' => 'pgsql:host=localhost;port=5432;dbname=simrs',
         'username' => 'postgres',
         'password' => '',
         'charset' => 'utf8',
