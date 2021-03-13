@@ -75,7 +75,7 @@ class SpesialisPsikologiController extends Controller
             if (!$pasien) {
                 return $this->redirect(['/site/ngga-nemu', 'id' => $id_cari]);
             }
-
+            
             $model = SpesialisPsikologi::find()
                 ->where(['no_rekam_medik' => $pasien->no_rekam_medik])
                 ->andWhere(['no_daftar' => $pasien->no_registrasi])

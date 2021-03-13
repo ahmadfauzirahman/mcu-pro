@@ -2,6 +2,7 @@
 
 namespace app\models\spesialis\psikologi;
 
+use app\models\BaseAR;
 use Yii;
 
 /**
@@ -61,7 +62,7 @@ use Yii;
  * @property string|null $dinamika_psikologi
  * @property string|null $kesimpulan
  */
-class SpesialisPsikologi extends \yii\db\ActiveRecord
+class SpesialisPsikologi extends BaseAR
 {
     /**
      * {@inheritdoc}
@@ -88,6 +89,7 @@ class SpesialisPsikologi extends \yii\db\ActiveRecord
             [['psikotes_pendukung_1', 'psikotes_pendukung_2', 'psikotes_pendukung_3', 'psikotes_pendukung_4', 'psikotes_pendukung_5'], 'string', 'max' => 15],
             [['hasil_tes'], 'string', 'max' => 200],
             [['dinamika_psikologi', 'kesimpulan'], 'string', 'max' => 500],
+            [['riwayat'], 'string'],
         ];
     }
 
