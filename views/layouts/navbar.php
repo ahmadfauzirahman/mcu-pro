@@ -37,7 +37,7 @@ use yii\helpers\Url;
                     <div class="arrow-down"></div>
                 </a>
 
-                <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-lg dropdown-menu-right" aria-labelledby="topnav-components">
+                <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-lg dropdown-menu-left" aria-labelledby="topnav-components">
                     <div class="row">
                         <div class="col-lg-6">
                             <div>
