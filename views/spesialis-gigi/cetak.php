@@ -516,11 +516,11 @@ use yii\helpers\Url;
                     <br><br><br><br>
                     <b>
                         <?php //echo $model->updatedByTeks->pegawai->nama;?>
-                        <?="pegawai nama" ?>
+                        <?="Nama Dokter" ?>
                     </b>
                     <br>
                     <?php // $model->updatedByTeks->pegawai->no ; ?>
-                    <?="pegawai no" ?>
+                    <?="Id Dokter" ?>
                 </td>
             </tr>
         </tbody>

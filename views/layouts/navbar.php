@@ -41,7 +41,7 @@ use yii\helpers\Url;
                     <div class="row">
                         <div class="col-lg-6">
                             <div>
-                                <a href="ui-alerts.html" class="dropdown-item">Gigi</a>
+                                <a href="<?= Url::to(['spesialis-gigi/periksa']) ?>" class="dropdown-item">Gigi</a>
                                 <a href="ui-buttons.html" class="dropdown-item">Mata</a>
                                 <a href="ui-cards.html" class="dropdown-item">THT</a>
                                 <a href="ui-carousel.html" class="dropdown-item">Audiometri</a>

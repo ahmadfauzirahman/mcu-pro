@@ -85,12 +85,12 @@ class BaseAR extends \yii\db\ActiveRecord
         return $this->pasien->nama . ' (' . $this->no_rekam_medik . ')';
     }
 
-    public function getCreatedByTeks()
-    {
-        return $this->hasOne(AkunAknUser::className(), ['userid' => 'created_by']);
-    }
-    public function getUpdatedByTeks()
-    {
-        return $this->hasOne(AkunAknUser::className(), ['userid' => 'updated_by']);
-    }
+    // public function getCreatedByTeks()
+    // {
+    //     return $this->hasOne(AkunAknUser::className(), ['userid' => 'created_by']);
+    // }
+    // public function getUpdatedByTeks()
+    // {
+    //     return $this->hasOne(AkunAknUser::className(), ['userid' => 'updated_by']);
+    // }
 }
