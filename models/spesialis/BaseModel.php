@@ -11,6 +11,7 @@
 
 namespace app\models\spesialis;
 
+use app\models\DataLayanan;
 use app\models\DataPelayanan;
 use yii\base\Model;
 use yii\helpers\ArrayHelper; 

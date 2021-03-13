@@ -12,6 +12,23 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
+        'formatter' => [
+            'dateFormat' => 'php:d-m-Y',
+            'datetimeFormat' => 'php:d-m-Y H:i:s',
+            'timeFormat' => 'php:H:i:s',
+            'decimalSeparator' => ',',
+            'thousandSeparator' => '.',
+            'currencyCode' => 'IDR',
+            'numberFormatterSymbols' => [
+                \NumberFormatter::CURRENCY_SYMBOL => ''
+            ],
+            'numberFormatterOptions' => [
+                // NumberFormatter::MIN_FRACTION_DIGITS => 0,
+                // NumberFormatter::MAX_FRACTION_DIGITS => 2,
+            ],
+            'defaultTimeZone' => 'Asia/Jakarta',
+            'nullDisplay' => '',
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'mcu-pro',
@@ -43,14 +60,11 @@ $config = [
             ],
         ],
         'db' => $db,
-        
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [
-            ],
+            'rules' => [],
         ],
-       
     ],
     'params' => $params,
 ];

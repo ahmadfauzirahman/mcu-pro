@@ -2,13 +2,14 @@
 
 namespace app\models\spesialis\mata;
 
+use app\models\BaseAR;
 use Yii;
 
 /**
  * This is the model class for table "mcu.spesialis_mata".
  *
  * @property int $id_spesialis_mata
- * @property string $no_rekam_medik
+ * @property string $no_rm
  * @property string|null $no_daftar
  * @property string|null $created_at
  * @property string|null $updated_at
@@ -44,7 +45,7 @@ use Yii;
  * @property string|null $kesan
  * @property string|null $status_pemeriksaan
  */
-class SpesialisMata extends \yii\db\ActiveRecord
+class SpesialisMata extends BaseAR
 {
     /**
      * {@inheritdoc}
@@ -60,12 +61,12 @@ class SpesialisMata extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['no_rekam_medik'], 'required'],
+            [['no_rm'], 'required'],
             [['no_daftar', 'lain_lain', 'kesimpulan', 'riwayat', 'kesan', 'status_pemeriksaan'], 'string'],
             [['created_at', 'updated_at'], 'safe'],
             [['created_by', 'updated_by'], 'default', 'value' => null],
             [['created_by', 'updated_by'], 'integer'],
-            [['no_rekam_medik'], 'string', 'max' => 120],
+            [['no_rm'], 'string', 'max' => 120],
             [['persepsi_warna_mata_kanan', 'persepsi_warna_mata_kiri', 'kelopak_mata_kanan', 'kelopak_mata_kiri', 'konjungtiva_mata_kanan', 'konjungtiva_mata_kiri', 'kesegarisan_gerak_bola_mata_kanan', 'kesegarisan_gerak_bola_mata_kiri', 'skiera_mata_kanan', 'skiera_mata_kiri', 'lensa_mata_kanan', 'lensa_mata_kiri', 'kornea_mata_kanan', 'kornea_mata_kiri', 'bulu_mata_kanan', 'bulu_mata_kiri', 'tekanan_bola_mata_kanan', 'tekanan_bola_mata_kiri', 'penglihatan_3_dimensi_mata_kanan', 'penglihatan_3_dimensi_mata_kiri', 'virus_mata_tanpa_koreksi_mata_kanan', 'virus_mata_tanpa_koreksi_mata_kiri', 'virus_mata_dengan_koreksi_mata_kanan', 'virus_mata_dengan_koreksi_mata_kiri'], 'string', 'max' => 70],
         ];
     }
@@ -77,7 +78,7 @@ class SpesialisMata extends \yii\db\ActiveRecord
     {
         return [
             'id_spesialis_mata' => 'Id Spesialis Mata',
-            'no_rekam_medik' => 'No Rekam Medik',
+            'no_rm' => 'No Rekam Medik',
             'no_daftar' => 'No Daftar',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
