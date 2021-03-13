@@ -19,7 +19,7 @@ use yii\helpers\Json;
 class BaseAR extends \yii\db\ActiveRecord
 {
     public $cari_pasien;
-    
+
     public function behaviors()
     {
         return [
@@ -34,15 +34,11 @@ class BaseAR extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'is_active' => 'Is Active',
+            'nama_no_rm' => 'Nama / No. RM',
             'created_at' => 'Dibuat Pada',
             'updated_at' => 'Diubah Pada',
             'created_by' => 'Dibuat Oleh',
             'updated_by' => 'Diubah Oleh',
-            'is_deleted' => 'Is Deleted',
-            'deleted_by' => 'Dihapus Oleh',
-            'deleted_at' => 'Dihapus Pada',
-            'histori_data' => 'Histori Data',
         ];
     }
 
@@ -51,41 +47,50 @@ class BaseAR extends \yii\db\ActiveRecord
         parent::afterSave($insert, $changedAttributes);
         if ($insert) {
             $newRow = $this->attributes;
-            unset($newRow['histori_data']);
+            unset($newRow['riwayat']);
             $oldRiwayat = [];
             array_push($oldRiwayat, $newRow);
-            // $this->riwayat = Json::encode($oldRiwayat, JSON_PRETTY_PRINT);
-            $this->riwayat = Json::encode($oldRiwayat);
-            $this->updateAttributes(['histori_data']);
+            $this->riwayat = Json::encode($oldRiwayat, JSON_PRETTY_PRINT);
+            $this->updateAttributes(['riwayat']);
         } else {
+            $this->updated_by = Yii::$app->user->id;
+            $this->updateAttributes(['updated_by']);
             if (count($changedAttributes) > 0) {
                 $newRow = $this->attributes;
-                unset($newRow['histori_data']);
-                $oldRiwayat = $this->riwayat ? Json::decode($this->riwayat) : [];
+                unset($newRow['riwayat']);
+                $oldRiwayat = Json::decode($this->riwayat);
                 array_push($oldRiwayat, $newRow);
-                // $this->riwayat = Json::encode($oldRiwayat, JSON_PRETTY_PRINT);
-                $this->riwayat = Json::encode($oldRiwayat);
-                $this->updateAttributes(['histori_data']);
+                $this->riwayat = Json::encode($oldRiwayat, JSON_PRETTY_PRINT);
+                $this->updateAttributes(['riwayat']);
             }
         }
     }
 
-    public function getCreatedByTeks()
+    public static function getJk($index)
     {
-        return $this->hasOne(User::className(), ['userid' => 'created_by']);
-    }
-    public function getUpdatedByTeks()
-    {
-        return $this->hasOne(User::className(), ['userid' => 'updated_by']);
+        $jk = [
+            'L' => 'Laki-laki',
+            'P' => 'Perempuan',
+        ];
+        return $jk[$index];
     }
 
-    public function setNullCreatePenerimaan()
+    public function getPasien()
     {
-        $this->riwayat = null;
-        $this->status = null;
-        $this->created_at = null;
-        $this->created_by = null;
-        $this->updated_at = null;
-        $this->updated_by = null;
+        return $this->hasOne(DataPelayanan::className(), ['no_rekam_medik' => 'no_rekam_medik']);
     }
+
+    public function getNama_no_rm()
+    {
+        return $this->pasien->nama . ' (' . $this->no_rekam_medik . ')';
+    }
+
+    // public function getCreatedByTeks()
+    // {
+    //     return $this->hasOne(AkunAknUser::className(), ['userid' => 'created_by']);
+    // }
+    // public function getUpdatedByTeks()
+    // {
+    //     return $this->hasOne(AkunAknUser::className(), ['userid' => 'updated_by']);
+    // }
 }

@@ -34,6 +34,9 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
+	<script>
+        const baseUrl = '<?= Yii::$app->homeUrl ?>';
+    </script>
     <?php $this->head() ?>
 </head>
 

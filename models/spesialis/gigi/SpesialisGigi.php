@@ -2,6 +2,7 @@
 
 namespace app\models\spesialis\gigi;
 
+use app\models\BaseAR;
 use Yii;
 
 /**
@@ -64,7 +65,7 @@ use Yii;
  * @property string|null $kesan
  * @property string|null $status_pemeriksaan
  */
-class SpesialisGigi extends \yii\db\ActiveRecord
+class SpesialisGigi extends BaseAR
 {
     /**
      * {@inheritdoc}

@@ -13,7 +13,7 @@ use Yii;
  * @property string|null $target_waktu
  * @property string|null $hasil_yang_diharapkan
  * @property string|null $keterangan
- * @property string|null $no_rm
+ * @property string|null $no_rekam_medik
  * @property string|null $jenis
  * @property int|null $id_fk
  */
@@ -33,7 +33,7 @@ class PenatalaksanaanMcu extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['jenis_permasalahan', 'rencana', 'target_waktu', 'hasil_yang_diharapkan', 'keterangan', 'no_rm', 'jenis'], 'string'],
+            [['jenis_permasalahan', 'rencana', 'target_waktu', 'hasil_yang_diharapkan', 'keterangan', 'no_rekam_medik', 'jenis'], 'string'],
             [['id_fk'], 'default', 'value' => null],
             [['id_fk'], 'integer'],
         ];
@@ -51,7 +51,7 @@ class PenatalaksanaanMcu extends \yii\db\ActiveRecord
             'target_waktu' => 'Target Waktu',
             'hasil_yang_diharapkan' => 'Hasil Yang Diharapkan',
             'keterangan' => 'Keterangan',
-            'no_rm' => 'No Rekam Medik',
+            'no_rekam_medik' => 'No Rekam Medik',
             'jenis' => 'Jenis',
             'id_fk' => 'Id Fk',
         ];
