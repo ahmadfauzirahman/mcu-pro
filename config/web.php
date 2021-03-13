@@ -1,16 +1,18 @@
 <?php
 
+$default_config = require __DIR__ . '/default_config.php';
 $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
 $config = [
-    'id' => 'basic',
+    'id' => 'Meckup',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
+    'container' => $default_config,
     'components' => [
         'formatter' => [
             'dateFormat' => 'php:d-m-Y',
