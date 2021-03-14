@@ -5,7 +5,7 @@
  * @Linkedin: linkedin.com/in/dickyermawan 
  * @Date: 2020-09-05 20:45:35 
  * @Last Modified by: Dicky Ermawan S., S.T., MTA
- * @Last Modified time: 2021-03-14 13:36:37
+ * @Last Modified time: 2021-03-14 22:34:28
  */
 
 const rataBerubah = _ => {
@@ -67,14 +67,29 @@ const rataBerubah = _ => {
 
 $(document).ready(function () {
 
+    // angka di tabel audiometri terselect saat onFocus 
+    $('.tabel-audiometri input').on('focus', function (e) {
+        $(this).select()
+    })
+
+    // radio & input berhubungan dengan baik 
+    $('#spesialistht-hd_septum_nasi_lainnya').on('focus', function (e) {
+        $("#hd_septum_nasi_1").prop("checked", true)
+    })
+    $('#spesialistht-hd_konka_nasal_lainnya').on('focus', function (e) {
+        $("#hd_konka_nasal_1").prop("checked", true)
+    })
+    $('#spesialistht-hd_nyeri_ketok_sinus_maksilar_lainnya').on('focus', function (e) {
+        $("#hd_nyeri_ketok_sinus_maksilar_1").prop("checked", true)
+    })
+
     $('#spesialistht-tl_test_garpu_tala_periksa').on('change', function (e) {
         let tl_test_garpu_tala_periksa = $('#SpesialisTht_tl_test_garpu_tala_periksa_0').prop('checked')
         console.log(tl_test_garpu_tala_periksa);
-        if (tl_test_garpu_tala_periksa){
+        if (tl_test_garpu_tala_periksa) {
             $('.tr_test_garpu_tala').show('slow')
             $('.tr_test_garpu_tala_td_no').attr('rowspan', '6')
-        }
-        else {
+        } else {
             $('.tr_test_garpu_tala').hide('slow')
             $('.tr_test_garpu_tala_td_no').attr('rowspan', '1')
         }

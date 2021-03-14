@@ -6,7 +6,7 @@
  * @Linkedin: linkedin.com/in/dickyermawan 
  * @Date: 2020-09-13 18:14:13 
  * @Last Modified by: Dicky Ermawan S., S.T., MTA
- * @Last Modified time: 2021-03-14 13:42:01
+ * @Last Modified time: 2021-03-14 22:40:27
  */
 
 use app\components\Helper;
@@ -41,7 +41,7 @@ $this->params['breadcrumbs'][] = $this->title;
     }
 
     .tr-ac-bc td {
-        padding: 3px !important;
+        padding: 1px !important;
     }
 
     .tr-ac-bc .was-validated .form-control:valid,
@@ -553,7 +553,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                     </table>
 
-                    <table class="table">
+                    <table class="table tabel-audiometri">
                         <colgroup span="19" width="53"></colgroup>
                         <tr>
                             <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=20 height="19" valign=top>
@@ -1296,7 +1296,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </tr> -->
                         <tr>
                             <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 rowspan=3 height="58" align="left" valign=middle><b>
-                                    <font color="#000000">V. KESAN</font>
+                                    <font color="#000000">IV. KESAN</font>
                                 </b></td>
                             <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle>
                                 <font color="#000000">:</font>

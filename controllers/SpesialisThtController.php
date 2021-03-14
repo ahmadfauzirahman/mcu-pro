@@ -151,7 +151,7 @@ class SpesialisThtController extends Controller
             if (!$model)
                 $model = new SpesialisTht();
 
-                $modelAudiometri = SpesialisAudiometri::find()
+            $modelAudiometri = SpesialisAudiometri::find()
                 ->where(['no_rekam_medik' => $pasien->no_rekam_medik])
                 ->andWhere(['no_daftar' => $pasien->no_registrasi])
                 ->one();
@@ -177,7 +177,14 @@ class SpesialisThtController extends Controller
             \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
 
             $modelAudiometri->no_rekam_medik = $model->no_rekam_medik;
-            
+            $modelAudiometri->no_daftar = $model->no_daftar;
+
+            // echo "<pre>";
+            // // print_r($model);
+            // print_r($modelAudiometri);
+            // echo "</pre>";
+            // die;
+
             if ($model->save() && $modelAudiometri->save()) {
                 return [
                     's' => true,
@@ -260,7 +267,7 @@ class SpesialisThtController extends Controller
             $model->tl_test_garpu_tala_periksa = 'Ya';
             $model->tl_test_berbisik_periksa = 'Ya';
             $model->tl_audiometri_periksa = 'Ya';
-            
+
             $model->kesan = 'Normal';
         }
 

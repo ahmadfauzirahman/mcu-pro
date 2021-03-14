@@ -1,7 +1,6 @@
 <?php
 
-use app\models
-\BaseAR;
+use app\models\BaseAR;
 use app\models\PenatalaksanaanMcu;
 use yii\helpers\Html;
 use yii\helpers\Url;
@@ -586,7 +585,7 @@ use yii\helpers\Url;
                 <td colspan="2"></td>
             </tr> -->
             <tr>
-                <th colspan="2" rowspan="2" style="text-align: left;">VI. KESAN<br>&nbsp;<br>&nbsp;</th>
+                <th colspan="2" rowspan="2" style="text-align: left;">IV. KESAN<br>&nbsp;<br>&nbsp;</th>
                 <td rowspan="2"> : </td>
                 <td rowspan="2" colspan="4"><?= $model->kesan ?></td>
             </tr>
