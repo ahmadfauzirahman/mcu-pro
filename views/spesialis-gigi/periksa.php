@@ -78,7 +78,7 @@ $dataG = [
           <?php
           echo $form->field($model, 'cari_pasien')->widget(Select2::classname(), [
             'data' => BaseModel::getListPasien(),
-            'theme' => Select2::THEME_DEFAULT,
+            'theme' => 'bootstrap',
             'options' => ['placeholder' => 'Cari Pasien ...'],
             'pluginOptions' => [
               'allowClear' => false
