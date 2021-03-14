@@ -48,6 +48,9 @@ class SpesialisKejiwaan extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
+
+    public $cari_pasien;
+
     public function rules()
     {
         return [
@@ -62,6 +65,7 @@ class SpesialisKejiwaan extends \yii\db\ActiveRecord
             [['validitas', 'saran'], 'string', 'max' => 200],
             [['interpretasi_subtantif'], 'string', 'max' => 500],
             [['kesimpulan'], 'string', 'max' => 20],
+            [['cari_pasien'], 'safe'],
         ];
     }
 
