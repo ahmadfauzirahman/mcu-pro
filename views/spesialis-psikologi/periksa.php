@@ -99,7 +99,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="">Nama</label>
-                                <input readonly type="text" class="form-control" value="<?= $pasien->nama ?? null ?>" id="nama_pasien">
+                                <input readonly type="text" class="form-control form-control-sm" value="<?= $pasien->nama ?? null ?>" id="nama_pasien">
                             </div>
                         </div>
                         <div class="col-sm-3">
