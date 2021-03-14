@@ -44,14 +44,12 @@ use yii\helpers\Url;
                                 <a href="<?= Url::to(['spesialis-gigi/periksa']) ?>" class="dropdown-item">Gigi</a>
                                 <a href="<?= Url::to(['spesialis-mata/periksa']) ?>" class="dropdown-item">Mata</a>
                                 <a href="<?= Url::to(['spesialis-tht/periksa']) ?>" class="dropdown-item">THT</a>
-                                <a href="<?= Url::to(['spesialis-audiometri/periksa']) ?>" class="dropdown-item">Audiometri</a>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div>
-                                <a href="<?= Url::to(['spesialis-tes-berbisik/periksa']) ?>" class="dropdown-item">Tes Berbisik</a>
-                                <a href="<?= Url::to(['spesialis-tes-garpu-tala/periksa']) ?>" class="dropdown-item">Tes Garpu Tala</a>
-                                <a href="<?= Url::to(['spesialis-psikologi/periksa']) ?>" class="dropdown-item">Kejiwaan- Psikologi</a>
+                                <a href="<?= Url::to(['spesialis-psikologi/periksa']) ?>" class="dropdown-item">Psikologi</a>
+                                <a href="<?= Url::to(['spesialis-kejiwaan/periksa']) ?>" class="dropdown-item">Kejiwaan</a>
                                 <a href="ui-modals.html" class="dropdown-item">Narkoba</a>
                             </div>
                         </div>
