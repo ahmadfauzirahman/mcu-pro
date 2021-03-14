@@ -31,15 +31,15 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         // "assets/libs/jquery/jquery.min.js",
-        // "assets/libs/bootstrap/js/bootstrap.bundle.min.js",
-        // "assets/libs/metismenu/metisMenu.min.js",
-        // "assets/libs/simplebar/simplebar.min.js",
-        // "assets/libs/node-waves/waves.min.js",
+        "assets/libs/bootstrap/js/bootstrap.bundle.min.js",
+        "assets/libs/metismenu/metisMenu.min.js",
+        "assets/libs/simplebar/simplebar.min.js",
+        "assets/libs/node-waves/waves.min.js",
         // "assets/libs/apexcharts/apexcharts.min.js",
 
         // "assets/js/pages/dashboard-2.init.js",
 
-        // "assets/js/app.js",
+        "assets/js/app.js",
 
 
         '../libs/toastr/js/toastr.min.js',
@@ -47,6 +47,6 @@ class AppAsset extends AssetBundle
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        // // 'yii\bootstrap4\BootstrapAsset',
+        'yii\bootstrap4\BootstrapAsset',
     ];
 }

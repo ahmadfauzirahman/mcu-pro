@@ -1,4 +1,14 @@
 <?php
+/*
+ * @Author: Dicky Ermawan S., S.T., MTA 
+ * @Email: wanasaja@gmail.com 
+ * @Web: dickyermawan.github.io 
+ * @Linkedin: linkedin.com/in/dickyermawan 
+ * @Date: 2021-03-14 13:55:55 
+ * @Last Modified by:   Dicky Ermawan S., S.T., MTA 
+ * @Last Modified time: 2021-03-14 13:55:55 
+ */
+
 
 namespace app\components;
 
