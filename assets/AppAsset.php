@@ -44,6 +44,7 @@ class AppAsset extends AssetBundle
 
         '../libs/toastr/js/toastr.min.js',
         '../js/site.js',
+        '../js/hotkeys.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
