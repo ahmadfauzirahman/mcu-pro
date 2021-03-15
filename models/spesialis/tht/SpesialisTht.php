@@ -2,6 +2,7 @@
 
 namespace app\models\spesialis\tht;
 
+use app\models\BaseAR;
 use Yii;
 
 /**
@@ -68,7 +69,7 @@ use Yii;
  * @property string|null $tl_test_berbisik_periksa
  * @property string|null $tl_audiometri_periksa
  */
-class SpesialisTht extends \yii\db\ActiveRecord
+class SpesialisTht extends BaseAR
 {
     /**
      * {@inheritdoc}

@@ -5,11 +5,12 @@
  * @Linkedin: linkedin.com/in/dickyermawan 
  * @Date: 2021-03-13 12:22:38 
  * @Last Modified by: Dicky Ermawan S., S.T., MTA
- * @Last Modified time: 2021-03-13 14:24:38
+ * @Last Modified time: 2021-03-14 22:29:40
  */
 
 input:read-only {
     cursor: no-drop;
+    background-color: #f2f2f2 !important;
 }
 
 input[type="radio"]:hover label:parent {

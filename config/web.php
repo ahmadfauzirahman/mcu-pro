@@ -15,6 +15,11 @@ $config = [
     ],
     'container' => $default_config,
     'components' => [
+        'assetManager' => [
+            'bundles' => [
+                'yii\bootstrap4\BootstrapAsset' => false,
+            ],
+        ],
         'formatter' => [
             'dateFormat' => 'php:d-m-Y',
             'datetimeFormat' => 'php:d-m-Y H:i:s',
