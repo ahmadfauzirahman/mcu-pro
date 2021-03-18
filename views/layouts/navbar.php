@@ -24,12 +24,12 @@ use yii\helpers\Url;
 
             </li>
 
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
                 <a class="nav-link" href="<?= Url::to(['site/about']) ?>" id="topnav-dashboard" aria-haspopup="true" aria-expanded="false">
                     Unit Lab. PK
                 </a>
 
-            </li>
+            </li> -->
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-components" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
