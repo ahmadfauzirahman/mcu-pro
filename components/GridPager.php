@@ -6,7 +6,7 @@
  * @Linkedin: linkedin.com/in/dickyermawan 
  * @Date: 2020-02-19 14:03:03 
  * @Last Modified by: Dicky Ermawan S., S.T., MTA
- * @Last Modified time: 2020-02-19 14:35:18
+ * @Last Modified time: 2021-03-18 18:45:11
  */
 
 
@@ -19,11 +19,11 @@ use yii\helpers\Html;
 class GridPager extends \yii\widgets\LinkPager
 {
 
-    public $firstPageLabel = '<span class="ti-angle-double-left"></span>';
-    public $lastPageLabel = '<span class="ti-angle-double-right"></span>';
+    public $firstPageLabel = '<span class="mdi mdi-step-backward-2"></span>';
+    public $lastPageLabel = '<span class="mdi mdi-step-forward-2"></span>';
 
-    public $prevPageLabel = '<span class="ti-angle-left"></span>';
-    public $nextPageLabel = '<span class="ti-angle-right"></span>';
+    public $prevPageLabel = '<span class="mdi mdi-step-backward"></span>';
+    public $nextPageLabel = '<span class="mdi mdi-step-forward"></span>';
 
     public $options = ['class' => 'pagination pagination-circle justify-content-end'];
 

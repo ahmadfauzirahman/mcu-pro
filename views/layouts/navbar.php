@@ -22,13 +22,13 @@ use yii\helpers\Url;
                     Unit Pemeriksaan
                 </a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link" href="<?= Url::to(['site/about']) ?>" id="topnav-dashboard" aria-haspopup="true"
-                   aria-expanded="false">
+
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link" href="<?= Url::to(['site/about']) ?>" id="topnav-dashboard" aria-haspopup="true" aria-expanded="false">
                     Unit Lab. PK
                 </a>
 
-            </li>
+            </li> -->
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-components" role="button"

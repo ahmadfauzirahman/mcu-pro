@@ -37,7 +37,7 @@ class ActionColumnSpesialis extends \yii\grid\ActionColumn
                     case 'update':
                         $title = Yii::t('yii', 'Update');
                         $class = 'btn btn-warning btn-sm btn-icon';
-                        $url = Url::to(['periksa', 'no_rm' => $model->no_rekam_medik]);
+                        $url = Url::to(['periksa', 'id' => $model->pasien->id_data_pelayanan]);
                         break;
                     default:
                         $title = ucfirst($name);

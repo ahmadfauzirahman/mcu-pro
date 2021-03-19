@@ -56,12 +56,18 @@ class SpesialisThtSearch extends SpesialisTht
      */
     public function search($params)
     {
-        $query = SpesialisTht::find();
+        $query = SpesialisTht::find()
+            ->joinWith(['pasien']);
 
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort' => [
+                'defaultOrder' => [
+                    'created_at' => SORT_DESC
+                ],
+            ],
         ]);
 
         $dataProvider->sort->attributes['nama_no_rm'] = [
