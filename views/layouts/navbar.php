@@ -12,32 +12,33 @@
 use yii\helpers\Url;
 
 ?>
-
 <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
-
     <div class="collapse navbar-collapse" id="topnav-menu-content">
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
-                <a class="nav-link" href="<?= Url::to(['site/index']) ?>" id="topnav-dashboard" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link" href="<?= Url::to(['unit-pemeriksaan/index']) ?>" id="topnav-dashboard"
+                   aria-haspopup="true"
+                   aria-expanded="false">
                     Unit Pemeriksaan
                 </a>
-
             </li>
-
             <li class="nav-item dropdown">
-                <a class="nav-link" href="<?= Url::to(['site/about']) ?>" id="topnav-dashboard" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link" href="<?= Url::to(['site/about']) ?>" id="topnav-dashboard" aria-haspopup="true"
+                   aria-expanded="false">
                     Unit Lab. PK
                 </a>
 
             </li>
 
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-components" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-components" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Spesialis
                     <div class="arrow-down"></div>
                 </a>
 
-                <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-lg dropdown-menu-left" aria-labelledby="topnav-components">
+                <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-lg dropdown-menu-left"
+                     aria-labelledby="topnav-components">
                     <div class="row">
                         <div class="col-lg-6">
                             <div>
@@ -49,7 +50,8 @@ use yii\helpers\Url;
                         <div class="col-lg-6">
                             <div>
                                 <a href="<?= Url::to(['spesialis-psikologi/periksa']) ?>" class="dropdown-item">Psikologi</a>
-                                <a href="<?= Url::to(['spesialis-kejiwaan/periksa']) ?>" class="dropdown-item">Kejiwaan</a>
+                                <a href="<?= Url::to(['spesialis-kejiwaan/periksa']) ?>"
+                                   class="dropdown-item">Kejiwaan</a>
                                 <a href="ui-modals.html" class="dropdown-item">Narkoba</a>
                             </div>
                         </div>
@@ -58,12 +60,14 @@ use yii\helpers\Url;
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-components" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-components" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Pengaturan
                     <div class="arrow-down"></div>
                 </a>
 
-                <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-lg dropdown-menu-left" aria-labelledby="topnav-components">
+                <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-lg dropdown-menu-left"
+                     aria-labelledby="topnav-components">
                     <div class="row">
                         <div class="col-lg-6">
                             <div>
@@ -82,12 +86,14 @@ use yii\helpers\Url;
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-components" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-components" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Master
                     <div class="arrow-down"></div>
                 </a>
 
-                <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-lg dropdown-menu-left" aria-labelledby="topnav-components">
+                <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-lg dropdown-menu-left"
+                     aria-labelledby="topnav-components">
                     <div class="row">
                         <div class="col-lg-6">
                             <div>
@@ -105,7 +111,8 @@ use yii\helpers\Url;
             </li>
 
             <li class="nav-item dropdown">
-                <a class="nav-link" href="<?= Url::to(['site/about']) ?>" id="topnav-dashboard" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link" href="<?= Url::to(['site/about']) ?>" id="topnav-dashboard" aria-haspopup="true"
+                   aria-expanded="false">
                     Laporan
                 </a>
 

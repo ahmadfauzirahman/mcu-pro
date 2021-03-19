@@ -1,9 +1,18 @@
 <?php
-/* @var $this yii\web\View */
-?>
-<h1>unit-pemeriksaan/index</h1>
 
-<p>
-    You may change the content of this page by modifying
-    the file <code><?= __FILE__; ?></code>.
-</p>
+/* @var $this yii\web\View */
+
+use yii\helpers\Html;
+
+$this->title = 'Unit Pemeriksaan';
+$this->params['breadcrumbs'][] = $this->title;
+?>
+<div class="site-about">
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <p>
+        This is the About page. You may modify the following file to customize its content:
+    </p>
+
+    <code><?= __FILE__ ?></code>
+</div>
