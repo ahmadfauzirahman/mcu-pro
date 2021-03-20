@@ -2,6 +2,7 @@
 
 use yii\bootstrap4\ActiveForm;
 use yii\helpers\Html;
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $pertanyaanAnmesis app\models\anamnesa\PertanyaanAnmnesis */
@@ -22,10 +23,10 @@ $this->params['breadcrumbs'][] = $this->title;
                     <h4 class="card-title">Unit Pemeriksaan Dokter Umum</h4>
                     <p class="card-title-desc">Unit Pemeriksaan DOkter Umum Untuk MCU</p>
 
-Data Pelayanan 
-<br>
-<br>
-<br>
+                    Data Pelayanan
+                    <br>
+                    <br>
+                    <br>
 
                     <!-- Nav tabs -->
                     <ul class="nav nav-pills nav-justified" role="tablist">
@@ -110,14 +111,28 @@ Data Pelayanan
                             </div>
                         </div>
                         <div class="tab-pane" id="anamnesis-okupasi" role="tabpanel">
-                            <p class="mb-0">
-                                Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna 8-bit.
-                            </p>
+                            <div class="form-group">
+                                <p> <b>5. Body Discomfort Map</b></p>
+                                <iframe src="<?= Url::base(true) ?>/body-discomfort/form?id=<?= "01049216" ?>" style="display: block;width: 1200px;height: 720px;border: none;"></iframe>
+                            </div>
+                            <hr>
                         </div>
                         <div class="tab-pane" id="pemeriksaan-fisik" role="tabpanel">
-                            <p class="mb-0">
-                                Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free.
-                            </p>
+                            <div class="col-lg-12">
+                                <div class="card-box">
+                                    <div class="form-group">
+                                        <h4 class="header-title m-t-0 m-b-30">24. Kulit</h4>
+                                        <div class="row">
+                                            <hr>
+                                            <div class="col-lg-12">
+                                                <iframe src="<?= Url::base(true) ?>/body-tato/form?id=<?= "01049216" ?>" style="display: block;width: 1200px;height: 720px;border: none;"></iframe>
+                                            </div>
+                                            <hr>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane" id="resume" role="tabpanel">
                             <p class="mb-0">
