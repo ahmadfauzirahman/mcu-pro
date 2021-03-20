@@ -72,7 +72,7 @@ class BaseAR extends \yii\db\ActiveRecord
             'L' => 'Laki-laki',
             'P' => 'Perempuan',
         ];
-        return $jk[$index];
+        return $jk[$index] ?? null;
     }
 
     public function getPasien()

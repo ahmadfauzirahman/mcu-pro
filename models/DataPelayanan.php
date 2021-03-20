@@ -29,7 +29,7 @@ use Yii;
  * @property string|null $jenis_kelamin
  * @property string|null $no_ujian NIK 
  */
-class DataPelayanan extends \yii\db\ActiveRecord
+class DataPelayanan extends BaseAR
 {
     /**
      * {@inheritdoc}

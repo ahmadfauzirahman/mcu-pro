@@ -285,7 +285,7 @@ use Yii;
  * @property string|null $gonorchoea
  * @property string|null $genitalia_lainnya
  */
-class MPemeriksaanFisik extends \yii\db\ActiveRecord
+class MPemeriksaanFisik extends BaseAR
 {
     /**
      * {@inheritdoc}
