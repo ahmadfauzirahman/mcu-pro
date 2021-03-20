@@ -77,7 +77,10 @@ class BaseAR extends \yii\db\ActiveRecord
 
     public function getPasien()
     {
-        return $this->hasOne(DataPelayanan::className(), ['no_rekam_medik' => 'no_rekam_medik']);
+        return $this->hasOne(DataPelayanan::className(), [
+            'no_rekam_medik' => 'no_rekam_medik',
+            'no_registrasi' => 'no_daftar',
+        ]);
     }
 
     public function getNama_no_rm()

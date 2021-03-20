@@ -44,12 +44,20 @@ class SpesialisMataSearch extends SpesialisMata
      */
     public function search($params)
     {
-        $query = SpesialisMata::find();
+        $query = SpesialisMata::find()
+            ->joinWith([
+                'pasien'
+            ]);
 
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort' => [
+                'defaultOrder' => [
+                    'created_at' => SORT_DESC
+                ],
+            ],
         ]);
 
         $dataProvider->sort->attributes['nama_no_rm'] = [
@@ -74,7 +82,7 @@ class SpesialisMataSearch extends SpesialisMata
             'updated_by' => $this->updated_by,
         ]);
 
-        $query->andFilterWhere(['ilike', 'no_rekam_medik', $this->no_rm])
+        $query
             ->andFilterWhere(['ilike', 'persepsi_warna_mata_kanan', $this->persepsi_warna_mata_kanan])
             ->andFilterWhere(['ilike', 'persepsi_warna_mata_kiri', $this->persepsi_warna_mata_kiri])
             ->andFilterWhere(['ilike', 'kelopak_mata_kanan', $this->kelopak_mata_kanan])
@@ -101,10 +109,10 @@ class SpesialisMataSearch extends SpesialisMata
             ->andFilterWhere(['ilike', 'virus_mata_dengan_koreksi_mata_kiri', $this->virus_mata_dengan_koreksi_mata_kiri])
             ->andFilterWhere(['ilike', 'lain_lain', $this->lain_lain])
             ->andFilterWhere(['ilike', 'kesimpulan', $this->kesimpulan])
-            ->andFilterWhere(['ilike', 'histori_data', $this->histori_data])
+            ->andFilterWhere(['ilike', 'histori_data', $this->riwayat])
             ->andFilterWhere([
                 'or',
-                ['ilike', DataPelayanan::tableName() . '.no_rm', $this->nama_no_rm],
+                ['ilike', DataPelayanan::tableName() . '.no_rekam_medik', $this->nama_no_rm],
                 ['ilike', DataPelayanan::tableName() . '.nama', $this->nama_no_rm]
             ]);
 

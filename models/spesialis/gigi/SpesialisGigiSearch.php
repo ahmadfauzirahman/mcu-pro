@@ -2,6 +2,7 @@
 
 namespace app\models\spesialis\gigi;
 
+use app\models\DataPelayanan;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\models\spesialis\gigi\SpesialisGigi;
@@ -11,6 +12,8 @@ use app\models\spesialis\gigi\SpesialisGigi;
  */
 class SpesialisGigiSearch extends SpesialisGigi
 {
+    public $nama_no_rm;
+
     /**
      * {@inheritdoc}
      */
@@ -19,6 +22,9 @@ class SpesialisGigiSearch extends SpesialisGigi
         return [
             [['id_spesialis_gigi', 'created_by', 'updated_by'], 'integer'],
             [['no_rekam_medik', 'no_daftar', 'created_at', 'updated_at', 'g18', 'g17', 'g16', 'g15', 'g14', 'g13', 'g12', 'g11', 'g21', 'g22', 'g23', 'g24', 'g25', 'g26', 'g27', 'g28', 'g38', 'g37', 'g36', 'g35', 'g34', 'g33', 'g32', 'g31', 'g41', 'g42', 'g43', 'g44', 'g45', 'g46', 'g47', 'g48', 'oklusi', 'torus_palatinus', 'torus_mandibularis', 'palatum', 'supernumerary_teeth', 'diastema', 'spacing', 'oral_hygiene', 'gingiva_periodontal', 'oral_mucosa', 'tongue', 'lain_lain', 'kesimpulan', 'saran', 'riwayat', 'kesan', 'status_pemeriksaan'], 'safe'],
+
+            ['nama_no_rm', 'safe'],
+
         ];
     }
 
@@ -40,13 +46,27 @@ class SpesialisGigiSearch extends SpesialisGigi
      */
     public function search($params)
     {
-        $query = SpesialisGigi::find();
+        $query = SpesialisGigi::find()
+            ->joinWith([
+                'pasien'
+            ]);
 
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort' => [
+                'defaultOrder' => [
+                    'created_at' => SORT_DESC
+                ],
+            ],
         ]);
+
+
+        $dataProvider->sort->attributes['nama_no_rm'] = [
+            'asc' => [DataPelayanan::tableName() . '.nama' => SORT_ASC],
+            'desc' => [DataPelayanan::tableName() . '.nama' => SORT_DESC],
+        ];
 
         $this->load($params);
 
@@ -115,7 +135,12 @@ class SpesialisGigiSearch extends SpesialisGigi
             ->andFilterWhere(['ilike', 'saran', $this->saran])
             ->andFilterWhere(['ilike', 'riwayat', $this->riwayat])
             ->andFilterWhere(['ilike', 'kesan', $this->kesan])
-            ->andFilterWhere(['ilike', 'status_pemeriksaan', $this->status_pemeriksaan]);
+            ->andFilterWhere(['ilike', 'status_pemeriksaan', $this->status_pemeriksaan])
+            ->andFilterWhere([
+                'or',
+                ['ilike', DataPelayanan::tableName() . '.no_rekam_medik', $this->nama_no_rm],
+                ['ilike', DataPelayanan::tableName() . '.nama', $this->nama_no_rm]
+            ]);
 
         return $dataProvider;
     }
