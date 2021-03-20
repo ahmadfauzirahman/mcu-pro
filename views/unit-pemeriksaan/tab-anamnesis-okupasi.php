@@ -14,5 +14,5 @@ use yii\helpers\Url;
 ?>
 <div class="form-group">
     <p> <b>5. Body Discomfort Map</b></p>
-    <iframe src="<?= Url::base(true) ?>/body-discomfort/form?id=<?= "01049216" ?>" style="display: block;width: 1200px;height: 720px;border: none;"></iframe>
+    <iframe src="<?= Url::base(true) ?>/body-discomfort/form?id=<?=  $pasien->no_rekam_medik ?>" style="display: block;width: 1200px;height: 720px;border: none;"></iframe>
 </div>
