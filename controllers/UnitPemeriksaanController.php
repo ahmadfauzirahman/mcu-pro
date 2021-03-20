@@ -10,8 +10,9 @@ class UnitPemeriksaanController extends \yii\web\Controller
     {
 
         $pertanyaanAnmesis = new PertanyaanAnmnesis();
-        
-        return $this->render('index');
-    }
 
+        return $this->render('index', [
+            'pertanyaanAnmesis' => $pertanyaanAnmesis
+        ]);
+    }
 }
