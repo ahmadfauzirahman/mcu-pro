@@ -1,115 +1,36 @@
-html,
-body {
-    height: 100%;
+/*
+ * @Author: Dicky Ermawan S., S.T., MTA 
+ * @Email: wanasaja@gmail.com 
+ * @Web: dickyermawan.github.io 
+ * @Linkedin: linkedin.com/in/dickyermawan 
+ * @Date: 2021-03-13 12:22:38 
+ * @Last Modified by: Dicky Ermawan S., S.T., MTA
+ * @Last Modified time: 2021-03-14 22:29:40
+ */
+
+input:read-only {
+    cursor: no-drop;
+    background-color: #f2f2f2 !important;
 }
 
-.wrap {
-    min-height: 100%;
-    height: auto;
-    margin: 0 auto -60px;
-    padding: 0 0 60px;
+input[type="radio"]:hover label:parent {
+    cursor: pointer;
 }
 
-.wrap > .container {
-    padding: 70px 15px 20px;
-}
-
-.footer {
-    height: 60px;
-    background-color: #f5f5f5;
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
-}
-
-.jumbotron {
-    text-align: center;
-    background-color: transparent;
-}
-
-.jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-}
-
-.not-set {
-    color: #c55;
-    font-style: italic;
-}
-
-/* add sorting icons to gridview sort links */
-a.asc:after, a.desc:after {
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
+/* perbaiki tampilan kartik select2 */
+.select2-container .select2-selection--single .select2-selection__rendered {
+    line-height: 20px;
     padding-left: 5px;
+    color: #495057;
 }
 
-a.asc:after {
-    content: /*"\e113"*/ "\e151";
+.select2-container .select2-selection--single .select2-selection__arrow {
+    height: 24px;
+    width: 14px;
+    right: 3px;
 }
 
-a.desc:after {
-    content: /*"\e114"*/ "\e152";
-}
-
-.sort-numerical a.asc:after {
-    content: "\e153";
-}
-
-.sort-numerical a.desc:after {
-    content: "\e154";
-}
-
-.sort-ordinal a.asc:after {
-    content: "\e155";
-}
-
-.sort-ordinal a.desc:after {
-    content: "\e156";
-}
-
-.grid-view th {
-    white-space: nowrap;
-}
-
-.hint-block {
-    display: block;
-    margin-top: 5px;
-    color: #999;
-}
-
-.error-summary {
-    color: #a94442;
-    background: #fdf7f7;
-    border-left: 3px solid #eed3d7;
-    padding: 10px 20px;
-    margin: 0 0 15px 0;
-}
-
-/* align the logout "link" (button in form) of the navbar */
-.nav li > form > button.logout {
-    padding: 15px;
-    border: none;
-}
-
-@media(max-width:767px) {
-    .nav li > form > button.logout {
-        display:block;
-        text-align: left;
-        width: 100%;
-        padding: 10px 15px;
-    }
-}
-
-.nav > li > form > button.logout:focus,
-.nav > li > form > button.logout:hover {
-    text-decoration: none;
-}
-
-.nav > li > form > button.logout:focus {
-    outline: none;
+.form-group label,
+div div label {
+    margin-bottom: 0px;
 }

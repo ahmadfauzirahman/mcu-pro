@@ -1,17 +1,43 @@
 <?php
 
+$default_config = require __DIR__ . '/default_config.php';
 $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
 $config = [
-    'id' => 'basic',
+    'id' => 'Meckup',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'language' => 'id-ID',
+    'defaultRoute' => 'unit-pemeriksaan/index',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
+    'container' => $default_config,
     'components' => [
+        'assetManager' => [
+            'bundles' => [
+                'yii\bootstrap4\BootstrapAsset' => false,
+            ],
+        ],
+        'formatter' => [
+            'dateFormat' => 'php:d-m-Y',
+            'datetimeFormat' => 'php:d-m-Y H:i:s',
+            'timeFormat' => 'php:H:i:s',
+            'decimalSeparator' => ',',
+            'thousandSeparator' => '.',
+            'currencyCode' => 'IDR',
+            // 'numberFormatterSymbols' => [
+            //     \NumberFormatter::CURRENCY_SYMBOL => ''
+            // ],
+            // 'numberFormatterOptions' => [
+            //     // NumberFormatter::MIN_FRACTION_DIGITS => 0,
+            //     // NumberFormatter::MAX_FRACTION_DIGITS => 2,
+            // ],
+            'defaultTimeZone' => 'Asia/Jakarta',
+            'nullDisplay' => '',
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'mcu-pro',
@@ -43,14 +69,11 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [
-            ],
+            'rules' => [],
         ],
-        */
     ],
     'params' => $params,
 ];
