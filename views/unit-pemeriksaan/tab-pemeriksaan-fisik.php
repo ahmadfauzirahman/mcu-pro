@@ -1914,7 +1914,70 @@ use yii\helpers\Url;
     </div>
     <hr>
 
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>16. Vertebra</h4>
+            <div class="row">
+                <div class="col-lg-12">
+                    <?= $form->field($model, 'vertebra')->radioList(['Normal' => 'Normal', 'Lordosis' => 'Lordosis', 'Skoliosis' => 'Skoliosis', 'Kiposis' => 'Kiposis',]) ?>
+                    <?= $form->field($model, 'vertebra_lainnya')->textInput(['maxlength' => true,]) ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>17. Tulang / Sendi (Ekstremitas Atas)</h4>
 
+            <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+                <tr>
+                    <th>Tulang Bawah Simetris</th>
+                    <td>
+                        <?= $form->field($model, 'tulang_atas_simetris')->radioList(['Ya' => "Ya", "Tidak Ada" => "Tidak Ada"])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <?= $form->field($model, 'tulang_atas_gerakan_abduksi_neer_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
+                        <?= $form->field($model, 'tulang_atas_gerakan_abduksi_hawkin_kanan')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"]) ?>
+                        <?= $form->field($model, 'tulang_atas_gerakan_drop_arm_kanan')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"]) ?>
+                        <?= $form->field($model, 'tulang_atas_gerakan_yergason_kanan')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"]) ?>
+                        <?= $form->field($model, 'tulang_atas_gerakan_speed_kanan')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"]) ?>
+                        <?= $form->field($model, 'tulang_atas_tulang_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
+                        <?= $form->field($model, 'tulang_atas_sensibilitas_kanan')->radioList(['Baik' => 'Baik', 'Tidak Baik']) ?>
+                        <?= $form->field($model, 'tulang_atas_oedem_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
+                        <?= $form->field($model, 'tulang_atas_varises_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
+                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_pin_prick_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
+                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_phallent_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
+                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_tinnel_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
+                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_finskelstein_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
+                        <?= $form->field($model, 'tulang_atas_vaskularisasi_kanan')->radioList(['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik']) ?>
+                        <?= $form->field($model, 'tulang_atas_kelaianan_kukujari_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
+                    </td>
+                    <td>
+                        <?= $form->field($model, 'tulang_atas_gerakan_abduksi_neer_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
+                        <?= $form->field($model, 'tulang_atas_gerakan_abduksi_hawkin_kiri')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"]) ?>
+                        <?= $form->field($model, 'tulang_atas_gerakan_drop_arm_kiri')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"]) ?>
+                        <?= $form->field($model, 'tulang_atas_gerakan_yergason_kiri')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"]) ?>
+                        <?= $form->field($model, 'tulang_atas_gerakan_speed_kiri')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"]) ?>
+                        <?= $form->field($model, 'tulang_atas_tulang_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
+                        <?= $form->field($model, 'tulang_atas_sensibilitas_kiri')->radioList(['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik']) ?>
+                        <?= $form->field($model, 'tulang_atas_oedem_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
+                        <?= $form->field($model, 'tulang_atas_varises_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
+                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_pin_prick_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
+                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_phallent_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
+                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_tinnel_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
+                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_finskelstein_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
+                        <?= $form->field($model, 'tulang_atas_vaskularisasi_kiri')->radioList(['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik']) ?>
+                        <?= $form->field($model, 'tulang_atas_kelaianan_kukujari_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr>
     <!-- 16-20 -->
     <div class="row">
         <div class="col-lg-12">
