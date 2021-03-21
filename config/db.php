@@ -3,9 +3,9 @@
 if (YII_ENV_DEV) {
     return [
         'class' => 'yii\db\Connection',
-        'dsn' => 'pgsql:host=localhost;port=5432;dbname=tims',
-        'username' => 'nurikadewi',
-        'password' => 'nurikadewi',
+        'dsn' => 'pgsql:host=localhost;port=5432;dbname=simrs',
+        'username' => 'postgres',
+        'password' => 'kelasXITI2',
         'charset' => 'utf8',
         'schemaMap' => [
             'pgsql' => [
@@ -22,9 +22,9 @@ if (YII_ENV_DEV) {
 } else {
     return [
         'class' => 'yii\db\Connection',
-        'dsn' => 'pgsql:host=localhost;port=5432;dbname=tims',
-        'username' => 'nurikadewi',
-        'password' => 'nurikadewi',
+        'dsn' => 'pgsql:host=localhost;port=5432;dbname=simrs',
+        'username' => 'postgres',
+        'password' => 'kelasXITI2',
         'charset' => 'utf8',
         'schemaMap' => [
             'pgsql' => [
