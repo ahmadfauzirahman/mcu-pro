@@ -34,7 +34,7 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
-	<script>
+    <script>
         const baseUrl = '<?= Yii::$app->homeUrl ?>';
     </script>
     <?php $this->head() ?>
@@ -53,19 +53,19 @@ AppAsset::register($this);
                         <div class="navbar-brand-box">
                             <a href="<?= Url::base() ?>" class="logo logo-dark">
                                 <span class="logo-sm">
-                                    <img src="<?= Url::to('@web/themes/assets/images/logo-sm-dark.png') ?>" alt="" height="20">
+                                    <img src="<?= Url::to('@web/img/logo-mcu.png') ?>" alt="" height="20">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="<?= Url::to('@web/themes/assets/images/logo-dark.png') ?>" alt="" height="18">
+                                    <img src="<?= Url::to('@web/img/logo-mcu.png') ?>" alt="" height="18">
                                 </span>
                             </a>
 
                             <a href="<?= Url::base() ?>" class="logo logo-light">
                                 <span class="logo-sm">
-                                    <img src="<?= Url::to('@web/themes/assets/images/logo-sm-dark.png') ?>" alt="" height="20">
+                                    <img src="<?= Url::to('@web/img/logo-mcu.png') ?>" alt="" height="20">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="<?= Url::to('@web/themes/assets/images/logo-light.png') ?>" alt="" height="18">
+                                    <img src="<?= Url::to('@web/img/logo-mcu.png') ?>" alt="" height="18">
                                 </span>
                             </a>
                         </div>
