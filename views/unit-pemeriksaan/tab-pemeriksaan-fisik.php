@@ -1266,6 +1266,307 @@ use yii\helpers\Url;
     <hr>
 
     <!-- 10-15 -->
+    <div class="row">
+        <div class="col-md-12">
+            <h4>
+                11. Leher
+            </h4>
+            <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+                <tr>
+                    <th>Gerakan Leher</th>
+                    <td>
+                        <?= $form->field($model, 'leher_gerakan_leher')->radioList(['Normal' => 'Normal', 'Terbatas' => 'Terbatas'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Otot Leher</th>
+                    <td>
+                        <?= $form->field($model, 'leher_otot_leher')->radioList(['Normal' => 'Normal', 'Spasme / Kontraksi' => 'Spasme / Kontraksi'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Kelenjer Thyroid</th>
+                    <td>
+                        <?= $form->field($model, 'leher_kelenjar_thyroid')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Pulsasi Carotis</th>
+                    <td>
+                        <?= $form->field($model, 'leher_pulsasi_carotis')->radioList(['Normal' => 'Normal', 'Bruit' => 'Bruit'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Vena Jugularis</th>
+                    <td>
+                        <?= $form->field($model, 'leher_tekanan_vena_jugularis')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Trachea</th>
+                    <td>
+                        <?= $form->field($model, 'leher_trachea')->radioList(['Normal' => 'Normal', 'Deviasi' => 'Deviasi'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Lainnya</th>
+                    <td>
+                        <?= $form->field($model, 'leher_lainnya')->textInput() ?>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>
+                12. Dada
+            </h4>
+            <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+                <tr>
+                    <th>Dada</th>
+                    <td> <?= $form->field($model, 'dada')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Bentuk</th>
+                    <td>
+                        <?= $form->field($model, 'dada_bentuk')->radioList(['Simetris' => 'Simetris', 'Asimetris' => 'Asimetris'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Mamae</th>
+                    <td>
+                        <?= $form->field($model, 'dada_mamae')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 10%;">
+                        <label class="control-label has-star col-md-2">Tumor</label>
+                    </td>
+                    <td>
+                        <?= $form->field($model, 'dada_tumor_ukuran')->textInput() ?>
+                        <?= $form->field($model, 'dada_tumor_letak')->textInput() ?>
+                        <?= $form->field($model, 'dada_tumor_konsisten')->textInput() ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Lainnya</th>
+                    <td>
+                        <?= $form->field($model, 'dada_lainnya')->textInput(['maxlength' => true,])->label(false) ?>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+
+            <h4>13. Paru-Paru dan Jantung</h4>
+
+
+            <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+                <tr>
+                    <th>A. Palpasi</th>
+                    <td>
+                        <?= $form->field($model, 'paru_jantung_palpasi')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr class="tr-label">
+                    <td>Kanan</td>
+                    <td>Kiri</td>
+                </tr>
+                <tr>
+                    <td>
+                        <?= $form->field($model, 'paru_jantung_perkusi_kanan')->radioList(['Sonor' => 'Sonor', 'Redup' => 'Redup', 'Hipersonor' => 'Hipersonor',]) ?>
+
+                    </td>
+                    <td>
+                        <?= $form->field($model, 'paru_jantung_perkusi_kiri')->radioList(['Sonor' => 'Sonor', 'Redup' => 'Redup', 'Hipersonor' => 'Hipersonor',]) ?>
+
+                    </td>
+                </tr>
+                <tr class="tr-label">
+                    <td colspan="2"><b>C. Auskultasi</b></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <?= $form->field($model, 'paru_jantung_auskultasi_bunyi_nafas_tambah_kanan')->radioList(['Tak Ada' => 'Tak Ada', 'Ronkhi' => 'Ronkhi', 'Wheezing' => 'Wheezing',]) ?>
+                    </td>
+                    <td>
+                        <?= $form->field($model, 'paru_jantung_auskultasi_bunyi_nafas_tambah_kiri')->radioList(['Tak Ada' => 'Tak Ada', 'Ronkhi' => 'Ronkhi', 'Wheezing' => 'Wheezing',]) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <?= $form->field($model, 'paru_jantung_auskultasi_bunyi_nafas_kanan')->radioList(['Vesikuler' => 'Vesikuler', 'Brc. Vesikuler' => 'Brc. Vesikuler',]) ?>
+                    </td>
+                    <td>
+                        <?= $form->field($model, 'paru_jantung_auskultasi_bunyi_nafas_kiri')->radioList(['Vesikuler' => 'Vesikuler', 'Brc. Vesikuler' => 'Brc. Vesikuler',]) ?>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+                <tr class="tr-label">
+                    <td colspan="2"><b>D. Jantung</b></td>
+                </tr>
+
+                <tr>
+                    <td colspan='2'>
+                        <label>Iktus Kordis</label>
+                        <?= $form->field($model, 'paru_jantung_perkusi_iktus_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal.........'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan='2'>
+                        <label>Batas Jantung</label>
+                        <?= $form->field($model, 'paru_jantung_bunyi_jantung')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal.........'])->label(false) ?>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-lg-12">
+
+            <h4 class="header-title m-t-0 m-b-30">14. Abdomen</h4>
+            <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+                <tr>
+                    <th>Palpasi</th>
+                    <td>
+                        <?= $form->field($model, 'abdomen')->radioList(['Supel' => 'Supel', 'Rigit' => 'Rigit'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Perkusi</th>
+                    <td>
+                        <?= $form->field($model, 'abdomen_perkusi')->radioList(['Timpani' => 'Timpani', 'Redup' => 'Redup'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Auskultai Bising Usus</th>
+                    <td>
+                        <?= $form->field($model, 'abdomen_auskultasi_bising_usus')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Hati</th>
+                    <td>
+                        <?= $form->field($model, 'abdomen_hati')->radioList(['Teraba' => 'Teraba', 'Tidak Teraba' => 'Tidak Teraba'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Limpa</th>
+                    <td>
+                        <?= $form->field($model, 'abdomen_limpa')->radioList(['Tidak Teraba Schuffner' => 'Tidak Teraba Schuffner', 'Teraba Schuffner' => 'Teraba Schuffner'])->label(false) ?>
+                    </td>
+                </tr>
+
+            </table>
+
+            <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Kanan</th>
+                        <th>Kiri</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ginjal</td>
+                        <td><?= $form->field($model, 'abdomen_ginjal_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                        </td>
+                        <td><?= $form->field($model, 'abdomen_ginjal_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ballotement</td>
+                        <td> <?= $form->field($model, 'abdomen_ballotement_kanan')->radioList(['Ada' => 'Ada', 'Tidak Ada' => 'Tidak Ada'])->label(false) ?>
+                        </td>
+                        <td> <?= $form->field($model, 'abdomen_ballotement_kiri')->radioList(['Ada' => 'Ada', 'Tidak Ada' => 'Tidak Ada'])->label(false) ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nyeri Costo Vertebrae</td>
+                        <td><?= $form->field($model, 'abdomen_nyeri_costo_vertebrae_kanan')->radioList(['Ada' => 'Ada', 'Tidak Ada' => 'Tidak Ada'])->label(false) ?>
+                        </td>
+                        <td> <?= $form->field($model, 'abdomen_nyeri_costo_vertebrae_kiri')->radioList(['Ada' => 'Ada', 'Tidak Ada' => 'Tidak Ada'])->label(false) ?>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>15. Genitourinaria</h4>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h6 class="m-0">
+                            <a href="#collapseOne" class="text-dark" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+                                Tidak Dilakukan Pemeriksaan #1
+                            </a>
+                        </h6>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+                            <tr>
+                                <th>kandung Kemih</th>
+                                <td><?= $form->field($model, 'genitourinaria_kandung_kemih')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Anus/Rektum/Perianal</th>
+                                <td>
+                                    <?= $form->field($model, 'genitourinaria_anus')->dropDownList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                                </td>
+                                <td>
+                                    <?= $form->field($model, 'hemoroid')->radioList(['Hemoroid' => 'Hemoroid'])->label(false) ?>
+                                    <?= $form->field($model, 'hemoroid_lainnya')->textInput(['placeholder' => 'Lainnya'])->label(false) ?>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Genitalia Eksternal</th>
+                                <td>
+                                    <?= $form->field($model, 'genitourinaria_genitalia_eksternal')->dropDownList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                                </td>
+                                <td>
+                                    <?= $form->field($model, 'hydrocele')->textInput(['value' => 'Tidak Normal'])->label(true) ?>
+                                    <?= $form->field($model, 'varicocele')->textInput(['value' => 'Tidak Normal'])->label(true) ?>
+                                    <?= $form->field($model, 'ulceral')->textInput(['value' => 'Tidak Normal'])->label(true) ?>
+                                    <?= $form->field($model, 'gonorchoea')->textInput(['value' => 'Tidak Normal'])->label(true) ?>
+                                    <?= $form->field($model, 'genitalia_lainnya')->textInput(['value' => 'Tidak Normal'])->label(true) ?>
+                                </td>
+
+                            </tr>
+                            <?php if (TRUE) { ?>
+                                <tr>
+                                    <th>Prostat (Khusus Pria)</th>
+                                    <td>
+                                        <?= $form->field($model, 'genitourinaria_prostat')->radioList(['Tidak Teraba' => 'Tidak Teraba', 'Teraba' => 'Teraba'])->label(false) ?>
+                                    </td>
+                                </tr>
+                            <?php } ?>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- disini -->
 
 
