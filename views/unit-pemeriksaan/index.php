@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <style>
-    .baris-data-pelayanan .form-group {
+    .parent-no-margin .form-group {
         margin-bottom: 0.15rem;
     }
 
@@ -36,6 +36,12 @@ $this->params['breadcrumbs'][] = $this->title;
         color: #343a40;
         position: sticky !important;
         top: 240px;
+    }
+
+    .tabel-garis-hitam th,
+    .tabel-garis-hitam td {
+        border: 1px solid #000000 !important;
+        border-collapse: collapse;
     }
 </style>
 
@@ -84,13 +90,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 ]); ?>
 
 
-                <div class="row baris-data-pelayanan">
+                <div class="row parent-no-margin">
                     <div class="col-md-10">
                         <div class="form-group row">
                             <label class="col-sm-2 col-form-label-sm">No. Rekam Medis</label>
                             <div class="col-sm-10">
                                 <?= Html::input('text', 'no_rekam_medik', $pasien->no_rekam_medik, [
-                                    'class' => 'form-control form-control-sm',
+                                    'class' => 'form-control form-control-sm font-weight-bold',
                                     'readonly' => true,
                                 ]) ?>
                             </div>
@@ -99,7 +105,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <label class="col-sm-2 col-form-label-sm">Nama</label>
                             <div class="col-sm-10">
                                 <?= Html::input('text', 'nama', $pasien->nama, [
-                                    'class' => 'form-control form-control-sm',
+                                    'class' => 'form-control form-control-sm font-weight-bold',
                                     'readonly' => true,
                                 ]) ?>
                             </div>
@@ -229,7 +235,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
 
                 <br>
-
+                <hr>
 
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs nav-tabs-custom nav-justified" role="tablist">
@@ -276,6 +282,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="tab-pane" id="pemeriksaan-fisik" role="tabpanel">
                         <?= $this->render('tab-pemeriksaan-fisik', [
                             'form' => $form,
+                            'model' => $model,
                         ]) ?>
                     </div>
                     <div class="tab-pane" id="resume" role="tabpanel">
