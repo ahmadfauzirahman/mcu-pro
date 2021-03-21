@@ -46,7 +46,7 @@ class UnitPemeriksaanController extends \yii\web\Controller
         return $this->render('index', [
             'pasien' => $pasien,
             'model' => $model,
-
+            'modelPenanta' => $modelPenata,
             'pertanyaanAnmesis' => $pertanyaanAnmesis
         ]);
     }
