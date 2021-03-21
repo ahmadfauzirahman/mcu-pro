@@ -840,8 +840,8 @@ use yii\helpers\Url;
                 <thead>
                     <tr>
                         <th colspan="3"></th>
-                        <th colspan="2" class="text-center font-weight-bold" style="color: #000000;">MATA KANAN</th>
-                        <th colspan="2" class="text-center font-weight-bold" style="color: #000000;">MATA KIRI</th>
+                        <th colspan="2" class="text-center font-weight-bold" style="color: #000000;">TELINGA KANAN</th>
+                        <th colspan="2" class="text-center font-weight-bold" style="color: #000000;">TELINGA KIRI</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -1913,7 +1913,6 @@ use yii\helpers\Url;
         </div>
     </div>
     <hr>
-
     <div class="row">
         <div class="col-lg-12">
             <h4>16. Vertebra</h4>
@@ -2062,10 +2061,443 @@ use yii\helpers\Url;
             </table>
         </div>
     </div>
+    <hr>
     <!-- disini -->
 
     <div class="row">
-        <h4 class="header-title m-t-0 m-b-30">24. Kulit</h4>
+        <div class="col-md-12">
+            <h4>
+                21. Saraf dan Fungsi Luhur
+            </h4>
+            <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+                <tbody>
+                    <tr>
+                        <td style="">Daya Ingat Segera</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_daya_ingat_segera')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                        <td style="">Kesan N I</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_kesan_n_i')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="">Daya Ingat Jangka Menengah</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_daya_ingat_jangka_menengah')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                        <td style="">Kesan N II</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_kesan_n_ii')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="">Daya Ingat Jangka Pendek</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_daya_ingat_jangka_pendek')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                        <td style="">Kesan N III</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_kesan_n_iii')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="">Daya Ingat Jangka Panjang</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_daya_ingat_jangka_panjang')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                        <td style="">Kesan N IV</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_kesan_n_iv')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="">Orientasi Waktu</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_orientasi_waktu')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                        <td style="">Kesan N V</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_kesan_n_v')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="">Orientasi Orang</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_orientasi_orang')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                        <td style="">Kesan N VI</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_kesan_n_vi')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="">Orientasi Tempat</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_orientasi_tempat')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                        <td style="">Kesan N VII</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_kesan_n_vii')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style=""></td>
+                        <td style="">Kesan N VIII</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_kesan_n_viii')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style=""></td>
+                        <td style="">Kesan N IX</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_kesan_n_ix')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style=""></td>
+                        <td style="">Kesan N X</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_kesan_n_x')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style=""></td>
+                        <td style="">Kesan N XI</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_kesan_n_xi')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style=""></td>
+                        <td style="">Kesan N XII</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="2">
+                            <?php
+                            echo $form->field($model, 'saraf_kesan_n_xii')->radioList(
+                                $oklusi_option = ['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik',],
+                                [
+                                    'item' => static function ($index, $label, $name, $checked, $value) use ($model) {
+                                        return Helper::radioList($index, $label, $name, $checked, $value, $model);
+                                    }
+                                ]
+                            )->label(false);
+                            ?>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h4>
+                22. Refleks
+            </h4>
+            <table class="table table-sm tabel-telinga tabel-garis-hitam">
+                <thead>
+                    <tr>
+                        <th colspan="3"></th>
+                        <th colspan="2" class="text-center font-weight-bold" style="color: #000000;">KANAN</th>
+                        <th colspan="2" class="text-center font-weight-bold" style="color: #000000;">KIRI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">1</td>
+                        <td style="width: 25%;">Fisiologis Patella</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'reflek_fisiologis_patella_kanan', ['id' => 'mpemeriksaanfisik_reflek_fisiologis_patella_kanan_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->reflek_fisiologis_patella_kanan == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_reflek_fisiologis_patella_kanan_1" name="MPemeriksaanFisik[reflek_fisiologis_patella_kanan]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                        <td>
+                            <?= Html::activeRadio($model, 'reflek_fisiologis_patella_kiri', ['id' => 'mpemeriksaanfisik_reflek_fisiologis_patella_kiri_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->reflek_fisiologis_patella_kiri == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_reflek_fisiologis_patella_kiri_1" name="MPemeriksaanFisik[reflek_fisiologis_patella_kiri]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">2</td>
+                        <td style="width: 25%;">Patologis</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'reflek_patologis_kanan', ['id' => 'mpemeriksaanfisik_reflek_patologis_kanan_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->reflek_patologis_kanan == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_reflek_patologis_kanan_1" name="MPemeriksaanFisik[reflek_patologis_kanan]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                        <td>
+                            <?= Html::activeRadio($model, 'reflek_patologis_kiri', ['id' => 'mpemeriksaanfisik_reflek_patologis_kiri_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->reflek_patologis_kiri == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_reflek_patologis_kiri_1" name="MPemeriksaanFisik[reflek_patologis_kiri]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h4>
+                23. Kulit
+            </h4>
+            <table class="table table-sm tabel-telinga tabel-garis-hitam">
+                <tbody>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">1</td>
+                        <td style="width: 25%;">Kulit</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'kulit_kulit', ['id' => 'mpemeriksaanfisik_kulit_kulit_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->kulit_kulit == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_kulit_kulit_1" name="MPemeriksaanFisik[kulit_kulit]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">2</td>
+                        <td style="width: 25%;">Selaput Lendir</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'kulit_selaput_lendir', ['id' => 'mpemeriksaanfisik_kulit_selaput_lendir_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->kulit_selaput_lendir == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_kulit_selaput_lendir_1" name="MPemeriksaanFisik[kulit_selaput_lendir]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">3</td>
+                        <td style="width: 25%;">Kuku</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'kulit_kuku', ['id' => 'mpemeriksaanfisik_kulit_kuku_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->kulit_kuku == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_kulit_kuku_1" name="MPemeriksaanFisik[kulit_kuku]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row">
         <div class="row">
             <hr>
             <div class="col-lg-12">

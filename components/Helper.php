@@ -27,6 +27,6 @@ class Helper
                 'label' => $label,
                 'id' => $id
             ]
-        );
+        ) . '&nbsp;&nbsp;&nbsp;';
     }
 }
