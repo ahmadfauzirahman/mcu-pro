@@ -268,7 +268,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <!-- Tab panes -->
                 <div class="tab-content p-3 text-muted">
-                    <div class="tab-pane active" id="anamnesis" role="tabpanel">
+                    <div class="tab-pane " id="anamnesis" role="tabpanel">
                         <?= $this->render('tab-anamnesis', [
                             'form' => $form,
                             'pertanyaanAnmesis' => $pertanyaanAnmesis,
@@ -280,7 +280,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             'pasien' => $pasien,
                         ]) ?>
                     </div>
-                    <div class="tab-pane" id="pemeriksaan-fisik" role="tabpanel">
+                    <div class="tab-pane active" id="pemeriksaan-fisik" role="tabpanel">
                         <?= $this->render('tab-pemeriksaan-fisik', [
                             'form' => $form,
                             'model' => $model,
