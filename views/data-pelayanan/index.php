@@ -35,13 +35,13 @@ $this->params['breadcrumbs'][] = $this->title;
                     'columns' => [
                         ['class' => 'yii\grid\SerialColumn'],
 
-                        'id_data_pelayanan',
+                        // 'id_data_pelayanan',
                         'no_rekam_medik',
                         'no_mcu',
                         'nama',
                         'tempat',
-                        //'tgl_lahir',
-                        //'agama',
+                        'tgl_lahir',
+                        'agama',
                         //'kedudukan_dalam_keluarga',
                         //'status_perkawinan',
                         //'pendidikan',
