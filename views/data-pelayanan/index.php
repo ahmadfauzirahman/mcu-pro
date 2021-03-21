@@ -7,58 +7,65 @@ use yii\widgets\Pjax;
 /* @var $searchModel app\models\DataPelayananSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Data Pelayanans';
+$this->title = 'Data Pelayanan';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="data-pelayanan-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card card-body">
 
-    <p>
-        <?= Html::a('Create Data Pelayanan', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+                <h1><?= Html::encode($this->title) ?></h1>
 
-    <?php Pjax::begin(); ?>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); 
-    ?>
+                <p>
+                    <?php Html::a('Create Data Pelayanan', ['create'], ['class' => 'btn btn-success']) ?>
+                </p>
 
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'tableOptions' => [
-            'class' => 'table table-sm table-bordered table-hover table-list-item'
-        ],
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+                <?php Pjax::begin(); ?>
+                <?php // echo $this->render('_search', ['model' => $searchModel]); 
+                ?>
 
-            'id_data_pelayanan',
-            'no_rekam_medik',
-            'no_mcu',
-            'nama',
-            'tempat',
-            //'tgl_lahir',
-            //'agama',
-            //'kedudukan_dalam_keluarga',
-            //'status_perkawinan',
-            //'pendidikan',
-            //'pekerjaan',
-            //'alamat:ntext',
-            //'wni',
-            //'tanggal_pemeriksaan',
-            //'pas_foto_offline:ntext',
-            //'pas_foto_online_valid',
-            //'kode_debitur',
-            //'kode_paket',
-            //'no_registrasi',
-            //'jenis_kelamin',
-            //'no_ujian',
+                <?= GridView::widget([
+                    'dataProvider' => $dataProvider,
+                    'filterModel' => $searchModel,
+                    'tableOptions' => [
+                        'class' => 'table table-sm table-bordered table-hover table-list-item'
+                    ],
+                    'columns' => [
+                        ['class' => 'yii\grid\SerialColumn'],
 
-            [
-                'class' => 'app\components\ActionColumn',
-            ]   ,
-        ],
-    ]); ?>
+                        'id_data_pelayanan',
+                        'no_rekam_medik',
+                        'no_mcu',
+                        'nama',
+                        'tempat',
+                        //'tgl_lahir',
+                        //'agama',
+                        //'kedudukan_dalam_keluarga',
+                        //'status_perkawinan',
+                        //'pendidikan',
+                        //'pekerjaan',
+                        //'alamat:ntext',
+                        //'wni',
+                        //'tanggal_pemeriksaan',
+                        //'pas_foto_offline:ntext',
+                        //'pas_foto_online_valid',
+                        //'kode_debitur',
+                        //'kode_paket',
+                        //'no_registrasi',
+                        //'jenis_kelamin',
+                        //'no_ujian',
 
-    <?php Pjax::end(); ?>
+                        [
+                            'class' => 'app\components\ActionColumn',
+                        ],
+                    ],
+                ]); ?>
+
+                <?php Pjax::end(); ?>
+            </div>
+        </div>
+    </div>
 
 </div>
