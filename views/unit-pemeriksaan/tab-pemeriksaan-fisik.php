@@ -1265,8 +1265,654 @@ use yii\helpers\Url;
     </div>
     <hr>
 
-    <!-- 10-15 -->
-    <!-- disini -->
+    <!-- 11-15 -->
+    <div class="row">
+        <div class="col-md-12">
+            <h4>
+                11. Leher
+            </h4>
+            <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+                <tbody>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">1</td>
+                        <td style="width: 25%;">Gerakan Leher</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'leher_gerakan_leher', ['id' => 'mpemeriksaanfisik_leher_gerakan_leher_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->leher_gerakan_leher == 'Terbatas') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_leher_gerakan_leher_1" name="MPemeriksaanFisik[leher_gerakan_leher]" value="Terbatas">
+                                Terbatas
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">2</td>
+                        <td style="width: 25%;">Otot Leher</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'leher_otot_leher', ['id' => 'mpemeriksaanfisik_leher_otot_leher_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->leher_otot_leher == 'Spasme / Kontraksi') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_leher_otot_leher_1" name="MPemeriksaanFisik[leher_otot_leher]" value="Spasme / Kontraksi">
+                                Spasme / Kontraksi
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">3</td>
+                        <td style="width: 25%;">Kelenjer Thyroid</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'leher_kelenjar_thyroid', ['id' => 'mpemeriksaanfisik_leher_kelenjar_thyroid_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->leher_kelenjar_thyroid == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_leher_kelenjar_thyroid_1" name="MPemeriksaanFisik[leher_kelenjar_thyroid]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">4</td>
+                        <td style="width: 25%;">Pulsasi Carotis</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'leher_pulsasi_carotis', ['id' => 'mpemeriksaanfisik_leher_pulsasi_carotis_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->leher_pulsasi_carotis == 'Bruit') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_leher_pulsasi_carotis_1" name="MPemeriksaanFisik[leher_pulsasi_carotis]" value="Bruit">
+                                Bruit
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">5</td>
+                        <td style="width: 25%;">Vena Jugularis</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'leher_tekanan_vena_jugularis', ['id' => 'mpemeriksaanfisik_leher_tekanan_vena_jugularis_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->leher_tekanan_vena_jugularis == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_leher_tekanan_vena_jugularis_1" name="MPemeriksaanFisik[leher_tekanan_vena_jugularis]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">6</td>
+                        <td style="width: 25%;">Trachea</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'leher_trachea', ['id' => 'mpemeriksaanfisik_leher_trachea_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->leher_trachea == 'Deviasi') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_leher_trachea_1" name="MPemeriksaanFisik[leher_trachea]" value="Deviasi">
+                                Deviasi
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">7</td>
+                        <td style="width: 25%;">Lainnya</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="4" style="width: 35%;">
+                            <?= $form->field($model, 'leher_lainnya')->textInput(['maxlength' => true])->label(false) ?>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>
+                12. Dada
+            </h4>
+            <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+                <tbody>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">1</td>
+                        <td style="width: 25%;">Dada</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'dada', ['id' => 'mpemeriksaanfisik_dada_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->dada == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_dada_1" name="MPemeriksaanFisik[dada]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">2</td>
+                        <td style="width: 25%;">Bentuk</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'dada_bentuk', ['id' => 'mpemeriksaanfisik_dada_bentuk_0', 'value' => 'Simetris', 'label' => 'Simetris']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->dada_bentuk == 'Asimetris') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_dada_bentuk_1" name="MPemeriksaanFisik[dada_bentuk]" value="Asimetris">
+                                Asimetris
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">3</td>
+                        <td style="width: 25%;">Mamae</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'dada_mamae', ['id' => 'mpemeriksaanfisik_dada_mamae_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->dada_mamae == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_dada_mamae_1" name="MPemeriksaanFisik[dada_mamae]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="text-center" style="width: 40px;">4</td>
+                        <td rowspan="3" style="width: 25%;">Tumor</td>
+                        <td rowspan="3" class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            Ukuran
+                        </td>
+                        <td colspan="3" style="width: 35%;">
+                            <?= $form->field($model, 'dada_tumor_ukuran')->textInput(['maxlength' => true])->label(false) ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Letak
+                        </td>
+                        <td colspan="3" style="width: 35%;">
+                            <?= $form->field($model, 'dada_tumor_letak')->textInput(['maxlength' => true])->label(false) ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Konsisten
+                        </td>
+                        <td colspan="3" style="width: 35%;">
+                            <?= $form->field($model, 'dada_tumor_konsisten')->textInput(['maxlength' => true])->label(false) ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">5</td>
+                        <td style="width: 25%;">Lainnya</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="4" style="width: 35%;">
+                            <?= $form->field($model, 'dada_lainnya')->textInput(['maxlength' => true])->label(false) ?>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>
+                13. Paru-Paru dan Jantung
+            </h4>
+            <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+                <tbody>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">A</td>
+                        <td style="width: 25%;">Palpasi</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'paru_jantung_palpasi', ['id' => 'mpemeriksaanfisik_paru_jantung_palpasi_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->paru_jantung_palpasi == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_paru_jantung_palpasi_1" name="MPemeriksaanFisik[paru_jantung_palpasi]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3"></th>
+                        <th colspan="2" class="text-center font-weight-bold" style="color: #000000;">KANAN</th>
+                        <th colspan="2" class="text-center font-weight-bold" style="color: #000000;">KIRI</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="text-center" style="width: 40px;">B</td>
+                        <td rowspan="2">Palpasi</td>
+                        <td rowspan="2" class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'paru_jantung_perkusi_kanan', ['id' => 'mpemeriksaanfisik_paru_jantung_perkusi_kanan_0', 'value' => 'Sonor', 'label' => 'Sonor']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->paru_jantung_perkusi_kanan == 'Redup') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_paru_jantung_perkusi_kanan_1" name="MPemeriksaanFisik[paru_jantung_perkusi_kanan]" value="Redup">
+                                Redup
+                            </label>
+                        </td>
+                        <td>
+                            <?= Html::activeRadio($model, 'paru_jantung_perkusi_kiri', ['id' => 'mpemeriksaanfisik_paru_jantung_perkusi_kiri_0', 'value' => 'Sonor', 'label' => 'Sonor']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->paru_jantung_perkusi_kiri == 'Redup') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_paru_jantung_perkusi_kiri_1" name="MPemeriksaanFisik[paru_jantung_perkusi_kiri]" value="Redup">
+                                Redup
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->paru_jantung_perkusi_kanan == 'Hipersonor') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_paru_jantung_perkusi_kanan_2" name="MPemeriksaanFisik[paru_jantung_perkusi_kanan]" value="Hipersonor">
+                                Hipersonor
+                            </label>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->paru_jantung_perkusi_kiri == 'Hipersonor') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_paru_jantung_perkusi_kiri_2" name="MPemeriksaanFisik[paru_jantung_perkusi_kiri]" value="Hipersonor">
+                                Hipersonor
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="text-center" style="width: 40px;">C</td>
+                        <td rowspan="2">Auskultasi Bunyi Nafas Tambah</td>
+                        <td rowspan="2" class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'paru_jantung_auskultasi_bunyi_nafas_tambah_kanan', ['id' => 'mpemeriksaanfisik_paru_jantung_auskultasi_bunyi_nafas_tambah_kanan_0', 'value' => 'Tak Ada', 'label' => 'Tak Ada']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->paru_jantung_auskultasi_bunyi_nafas_tambah_kanan == 'Ronkhi') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_paru_jantung_auskultasi_bunyi_nafas_tambah_kanan_1" name="MPemeriksaanFisik[paru_jantung_auskultasi_bunyi_nafas_tambah_kanan]" value="Ronkhi">
+                                Ronkhi
+                            </label>
+                        </td>
+                        <td>
+                            <?= Html::activeRadio($model, 'paru_jantung_auskultasi_bunyi_nafas_tambah_kiri', ['id' => 'mpemeriksaanfisik_paru_jantung_auskultasi_bunyi_nafas_tambah_kiri_0', 'value' => 'Tak Ada', 'label' => 'Tak Ada']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->paru_jantung_auskultasi_bunyi_nafas_tambah_kiri == 'Ronkhi') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_paru_jantung_auskultasi_bunyi_nafas_tambah_kiri_1" name="MPemeriksaanFisik[paru_jantung_auskultasi_bunyi_nafas_tambah_kiri]" value="Ronkhi">
+                                Ronkhi
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->paru_jantung_auskultasi_bunyi_nafas_tambah_kanan == 'Wheezing') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_paru_jantung_auskultasi_bunyi_nafas_tambah_kanan_2" name="MPemeriksaanFisik[paru_jantung_auskultasi_bunyi_nafas_tambah_kanan]" value="Wheezing">
+                                Wheezing
+                            </label>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->paru_jantung_auskultasi_bunyi_nafas_tambah_kiri == 'Wheezing') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_paru_jantung_auskultasi_bunyi_nafas_tambah_kiri_2" name="MPemeriksaanFisik[paru_jantung_auskultasi_bunyi_nafas_tambah_kiri]" value="Wheezing">
+                                Wheezing
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Auskultasi Bunyi Nafas </td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'paru_jantung_auskultasi_bunyi_nafas_kanan', ['id' => 'mpemeriksaanfisik_paru_jantung_auskultasi_bunyi_nafas_kanan_0', 'value' => 'Vesikuler', 'label' => 'Vesikuler']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->paru_jantung_auskultasi_bunyi_nafas_kanan == 'Brc. Vesikuler') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_paru_jantung_auskultasi_bunyi_nafas_kanan_1" name="MPemeriksaanFisik[paru_jantung_auskultasi_bunyi_nafas_kanan]" value="Brc. Vesikuler">
+                                Brc. Vesikuler
+                            </label>
+                        </td>
+                        <td>
+                            <?= Html::activeRadio($model, 'paru_jantung_auskultasi_bunyi_nafas_kiri', ['id' => 'mpemeriksaanfisik_paru_jantung_auskultasi_bunyi_nafas_kiri_0', 'value' => 'Vesikuler', 'label' => 'Vesikuler']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->paru_jantung_auskultasi_bunyi_nafas_kiri == 'Brc. Vesikuler') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_paru_jantung_auskultasi_bunyi_nafas_kiri_1" name="MPemeriksaanFisik[paru_jantung_auskultasi_bunyi_nafas_kiri]" value="Brc. Vesikuler">
+                                Brc. Vesikuler
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="text-center" style="width: 40px;">D</td>
+                        <td style="width: 25%;">Jantung</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td colspan="4" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 25%;">Iktus Kordis</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'paru_jantung_perkusi_iktus_kiri', ['id' => 'mpemeriksaanfisik_paru_jantung_perkusi_iktus_kiri_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->paru_jantung_perkusi_iktus_kiri == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_paru_jantung_perkusi_iktus_kiri_1" name="MPemeriksaanFisik[paru_jantung_perkusi_iktus_kiri]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 25%;">Batas Jantung</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'paru_jantung_bunyi_jantung', ['id' => 'mpemeriksaanfisik_paru_jantung_bunyi_jantung_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->paru_jantung_bunyi_jantung == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_paru_jantung_bunyi_jantung_1" name="MPemeriksaanFisik[paru_jantung_bunyi_jantung]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>
+                14. Abdomen
+            </h4>
+            <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+                <tbody>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">1</td>
+                        <td style="width: 25%;">Palpasi</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'abdomen', ['id' => 'mpemeriksaanfisik_abdomen_0', 'value' => 'Supel', 'label' => 'Supel']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->abdomen == 'Rigit') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_abdomen_1" name="MPemeriksaanFisik[abdomen]" value="Rigit">
+                                Rigit
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">2</td>
+                        <td style="width: 25%;">Perkusi</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'abdomen_perkusi', ['id' => 'mpemeriksaanfisik_abdomen_perkusi_0', 'value' => 'Timpani', 'label' => 'Timpani']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->abdomen_perkusi == 'Redup') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_abdomen_perkusi_1" name="MPemeriksaanFisik[abdomen_perkusi]" value="Redup">
+                                Redup
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">3</td>
+                        <td style="width: 25%;">Auskultai Bising Usus</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'abdomen_auskultasi_bising_usus', ['id' => 'mpemeriksaanfisik_abdomen_auskultasi_bising_usus_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->abdomen_auskultasi_bising_usus == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_abdomen_auskultasi_bising_usus_1" name="MPemeriksaanFisik[abdomen_auskultasi_bising_usus]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">4</td>
+                        <td style="width: 25%;">Hati</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'abdomen_hati', ['id' => 'mpemeriksaanfisik_abdomen_hati_0', 'value' => 'Teraba', 'label' => 'Teraba']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->abdomen_hati == 'Tidak Teraba') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_abdomen_hati_1" name="MPemeriksaanFisik[abdomen_hati]" value="Tidak Teraba">
+                                Tidak Teraba
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">5</td>
+                        <td style="width: 25%;">Limpa</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'abdomen_limpa', ['id' => 'mpemeriksaanfisik_abdomen_limpa_0', 'value' => 'Tidak Teraba Schuffner', 'label' => 'Tidak Teraba Schuffner']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->abdomen_limpa == 'Teraba Schuffner') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_abdomen_limpa_1" name="MPemeriksaanFisik[abdomen_limpa]" value="Teraba Schuffner">
+                                Teraba Schuffner
+                            </label>
+                        </td>
+                        <td colspan="2" style="width: 35%;"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3"></th>
+                        <th colspan="2" class="text-center font-weight-bold" style="color: #000000;">KANAN</th>
+                        <th colspan="2" class="text-center font-weight-bold" style="color: #000000;">KIRI</th>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">6</td>
+                        <td style="width: 25%;">Ginjal</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'abdomen_ginjal_kanan', ['id' => 'mpemeriksaanfisik_abdomen_ginjal_kanan_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->abdomen_ginjal_kanan == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_abdomen_ginjal_kanan_1" name="MPemeriksaanFisik[abdomen_ginjal_kanan]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                        <td>
+                            <?= Html::activeRadio($model, 'abdomen_ginjal_kiri', ['id' => 'mpemeriksaanfisik_abdomen_ginjal_kiri_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->abdomen_ginjal_kiri == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_abdomen_ginjal_kiri_1" name="MPemeriksaanFisik[abdomen_ginjal_kiri]" value="Tidak Normal">
+                                Tidak Normal
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">7</td>
+                        <td style="width: 25%;">Ballotement</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'abdomen_ballotement_kanan', ['id' => 'mpemeriksaanfisik_abdomen_ballotement_kanan_0', 'value' => 'Ada', 'label' => 'Ada']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->abdomen_ballotement_kanan == 'Tidak Ada') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_abdomen_ballotement_kanan_1" name="MPemeriksaanFisik[abdomen_ballotement_kanan]" value="Tidak Ada">
+                                Tidak Ada
+                            </label>
+                        </td>
+                        <td>
+                            <?= Html::activeRadio($model, 'abdomen_ballotement_kiri', ['id' => 'mpemeriksaanfisik_abdomen_ballotement_kiri_0', 'value' => 'Ada', 'label' => 'Ada']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->abdomen_ballotement_kiri == 'Tidak Ada') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_abdomen_ballotement_kiri_1" name="MPemeriksaanFisik[abdomen_ballotement_kiri]" value="Tidak Ada">
+                                Tidak Ada
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" style="width: 40px;">8</td>
+                        <td style="width: 25%;">Nyeri Costo Vertebrae</td>
+                        <td class="text-center" style="width: 20px;">:</td>
+                        <td>
+                            <?= Html::activeRadio($model, 'abdomen_nyeri_costo_vertebrae_kanan', ['id' => 'mpemeriksaanfisik_abdomen_nyeri_costo_vertebrae_kanan_0', 'value' => 'Ada', 'label' => 'Ada']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->abdomen_nyeri_costo_vertebrae_kanan == 'Tidak Ada') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_abdomen_nyeri_costo_vertebrae_kanan_1" name="MPemeriksaanFisik[abdomen_nyeri_costo_vertebrae_kanan]" value="Tidak Ada">
+                                Tidak Ada
+                            </label>
+                        </td>
+                        <td>
+                            <?= Html::activeRadio($model, 'abdomen_nyeri_costo_vertebrae_kiri', ['id' => 'mpemeriksaanfisik_abdomen_nyeri_costo_vertebrae_kiri_0', 'value' => 'Ada', 'label' => 'Ada']) ?>
+                        </td>
+                        <td>
+                            <label>
+                                <input <?= ($model->abdomen_nyeri_costo_vertebrae_kiri == 'Tidak Ada') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_abdomen_nyeri_costo_vertebrae_kiri_1" name="MPemeriksaanFisik[abdomen_nyeri_costo_vertebrae_kiri]" value="Tidak Ada">
+                                Tidak Ada
+                            </label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="accordion">
+                <div class="card mb-1 shadow-none">
+                    <div class="card-header bg-warning" id="headingOne">
+                        <h6 class="m-0">
+                            <a href="#collapseOne" class="text-dark" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>
+                                    15. Genitourinaria
+                                </h4>
+                            </a>
+                        </h6>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+
+                        <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+                            <tbody>
+                                <tr>
+                                    <td class="text-center" style="width: 40px;">1</td>
+                                    <td style="width: 25%;">Kandung Kemih</td>
+                                    <td class="text-center" style="width: 20px;">:</td>
+                                    <td>
+                                        <?= Html::activeRadio($model, 'genitourinaria_kandung_kemih', ['id' => 'mpemeriksaanfisik_genitourinaria_kandung_kemih_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                                    </td>
+                                    <td>
+                                        <label>
+                                            <input <?= ($model->genitourinaria_kandung_kemih == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_genitourinaria_kandung_kemih_1" name="MPemeriksaanFisik[genitourinaria_kandung_kemih]" value="Tidak Normal">
+                                            Tidak Normal
+                                        </label>
+                                    </td>
+                                    <td colspan="2" style="width: 35%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" style="width: 40px;">2</td>
+                                    <td style="width: 25%;">Anus/Rektum/Perianal</td>
+                                    <td class="text-center" style="width: 20px;">:</td>
+                                    <td>
+                                        <?= Html::activeRadio($model, 'genitourinaria_anus', ['id' => 'mpemeriksaanfisik_genitourinaria_anus_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                                    </td>
+                                    <td>
+                                        <label>
+                                            <input <?= ($model->genitourinaria_anus == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_genitourinaria_anus_1" name="MPemeriksaanFisik[genitourinaria_anus]" value="Tidak Normal">
+                                            Tidak Normal
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <?= Html::activeRadio($model, 'hemoroid', ['id' => 'mpemeriksaanfisik_hemoroid_0', 'value' => 'Hemoroid', 'label' => 'Hemoroid']) ?>
+                                    </td>
+                                    <td>
+                                        <?= $form->field($model, 'hemoroid_lainnya')->textInput(['maxlength' => true])->label(false) ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="5" class="text-center" style="width: 40px;">3</td>
+                                    <td rowspan="5" style="width: 25%;">Genitalia Eksternal</td>
+                                    <td rowspan="5" class="text-center" style="width: 20px;">:</td>
+                                    <td rowspan="5">
+                                        <?= Html::activeRadio($model, 'genitourinaria_genitalia_eksternal', ['id' => 'mpemeriksaanfisik_genitourinaria_genitalia_eksternal_0', 'value' => 'Normal', 'label' => 'Normal']) ?>
+                                    </td>
+                                    <td rowspan="5">
+                                        <label>
+                                            <input <?= ($model->genitourinaria_genitalia_eksternal == 'Tidak Normal') ? 'checked' : null ?> type="radio" id="mpemeriksaanfisik_genitourinaria_genitalia_eksternal_1" name="MPemeriksaanFisik[genitourinaria_genitalia_eksternal]" value="Tidak Normal">
+                                            Tidak Normal
+                                        </label>
+                                    </td>
+                                    <td>
+                                        Hydrocele
+                                    </td>
+                                    <td>
+                                        <?= $form->field($model, 'hydrocele')->textInput(['maxlength' => true])->label(false) ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Varicocele
+                                    </td>
+                                    <td>
+                                        <?= $form->field($model, 'varicocele')->textInput(['maxlength' => true])->label(false) ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Ulceral
+                                    </td>
+                                    <td>
+                                        <?= $form->field($model, 'ulceral')->textInput(['maxlength' => true])->label(false) ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Gonorchoea
+                                    </td>
+                                    <td>
+                                        <?= $form->field($model, 'gonorchoea')->textInput(['maxlength' => true])->label(false) ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Genitalia Lainnya
+                                    </td>
+                                    <td>
+                                        <?= $form->field($model, 'genitalia_lainnya')->textInput(['maxlength' => true])->label(false) ?>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
 
 
     <!-- 16-20 -->
