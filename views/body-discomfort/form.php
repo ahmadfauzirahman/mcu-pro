@@ -604,7 +604,7 @@ $this->registerJs("
 
 		       
 		");
-?> 
+?>
 <?php
 $this->registerJs("	
 		setTimeout(function(){   
