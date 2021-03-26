@@ -43,6 +43,28 @@ $this->params['breadcrumbs'][] = $this->title;
         border: 1px solid #000000 !important;
         border-collapse: collapse;
     }
+
+    .float-group {
+        position: fixed;
+        bottom: 90px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        text-align: center;
+        box-shadow: 2.5px 2.5px 5px #999;
+        z-index: 100;
+    }
+
+    .float {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        text-align: center;
+        box-shadow: 2.5px 2.5px 5px #999;
+        z-index: 100;
+    }
 </style>
 
 <div class="row">
@@ -294,6 +316,26 @@ $this->params['breadcrumbs'][] = $this->title;
                         ]) ?>
                     </div>
                 </div>
+
+                <!-- <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+                    <i class="fa fa-whatsapp my-float"></i>
+                </a> -->
+
+                <?php
+                if (!$pasien->isNewRecord) :
+                ?>
+                    <div class="float-group btn-group-vertical" role="group" aria-label="Vertical button group">
+                        <a title="<?= $pasien->no_rekam_medik . ' / ' . $pasien->nama . ' / No. Daftar: ' . $pasien->no_registrasi ?>" href="<?= Url::to(['/']) ?>" class="btn btn-lg btn-primary" style="width: 150px; font-size: small;"><i class="fas fa-tooth"></i> Spesialis Gigi</a>
+                        <a title="<?= $pasien->no_rekam_medik . ' / ' . $pasien->nama . ' / No. Daftar: ' . $pasien->no_registrasi ?>" href="<?= Url::to(['/']) ?>" class="btn btn-lg btn-danger" style="width: 150px; font-size: small;"><i class="fas fa-eye"></i> Spesialis Mata</a>
+                        <a title="<?= $pasien->no_rekam_medik . ' / ' . $pasien->nama . ' / No. Daftar: ' . $pasien->no_registrasi ?>" href="<?= Url::to(['/']) ?>" class="btn btn-lg btn-info" style="width: 150px; font-size: small;"><i class="fas fa-assistive-listening-systems"></i> Spesialis THT</a>
+                    </div>
+
+                    <button type="button" class="float btn btn-success waves-effect waves-light" style="width: 150px; font-size: small;">
+                        <i class="bx bx-check-double font-size-16 align-middle mr-2"></i> Simpan
+                    </button>
+                <?php
+                endif;
+                ?>
 
                 <?php ActiveForm::end(); ?>
             </div>
