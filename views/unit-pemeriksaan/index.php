@@ -228,7 +228,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </div>
                     </div>
                     <div class="col-md-2 text-center">
-                        <?= Html::img($pasien->pas_foto_offline, ['class' => 'img-thumbnail rounded', 'style' => 'width: 100%;', 'alt' => 'Photo Pasien']) ?>
+                        <?= Html::img($pasien->pasPhoto, ['class' => 'img-thumbnail rounded', 'style' => 'width: 100%;', 'alt' => 'Photo Pasien']) ?>
 
                         <div class="clearfix"></div>
                     </div>

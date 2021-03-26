@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\helpers\Url;
 
 /**
  * This is the model class for table "mcu.data_pelayanan".
@@ -89,5 +90,10 @@ class DataPelayanan extends BaseAR
             'jenis_kelamin' => 'Jenis Kelamin',
             'no_ujian' => 'No Ujian',
         ];
+    }
+
+    public function getPasPhoto()
+    {
+        return $this->pas_foto_offline ?? Url::to('@web/img/default-photo.png');
     }
 }
