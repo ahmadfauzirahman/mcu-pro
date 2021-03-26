@@ -34,7 +34,7 @@ use yii\helpers\Url;
             <?= $form->field($modelPenanta, 'keterangan')->textarea(['rows' => 3]) ?>
         </div>
     </div>
-
+    <hr>
     <div class="row">
         <div class="col-lg-12">
             <table class="table table-bordered">

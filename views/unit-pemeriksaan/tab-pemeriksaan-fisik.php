@@ -21,19 +21,19 @@ use yii\helpers\Url;
             <div class="card-box">
                 <div class="form-group">
                     <h4 class="header-title m-t-0 m-b-30">1. Tanda Vital</h4>
-                    <table class="table table-bordered">
+                    <table class="table table-sm tabel-garis-hitam parent-no-margin">
                         <tbody>
                             <tr>
-                                <th>Nadi</th>
-                                <td>
+                                <th style="width: 20%;">Nadi</th>
+                                <td style="width: 30%;">
                                     <div class="form-group field-masterpemeriksaanfisik-kepala_tulang">
-                                        <input type="text" id="masterpemeriksaanfisik-tanda_vital_nadi" class="form-control" name="MasterPemeriksaanFisik[tanda_vital_nadi]" value="" placeholder="Vital Nadi">
+                                        <input type="text" id="masterpemeriksaanfisik-tanda_vital_nadi" class="form-control form-control-sm" name="MasterPemeriksaanFisik[tanda_vital_nadi]" value="" placeholder="Vital Nadi">
                                     </div>
                                 </td>
-                                <th>Pernapasan</th>
-                                <td>
+                                <th style="width: 20%;">Pernapasan</th>
+                                <td style="width: 30%;">
                                     <div class="form-group field-masterpemeriksaanfisik-kepala_bentuk_wajah">
-                                        <input type="text" id="masterpemeriksaanfisik-tanda_vital_pernapasan" class="form-control" name="MasterPemeriksaanFisik[tanda_vital_pernapasan]" value="" placeholder="Pernapasan">
+                                        <input type="text" id="masterpemeriksaanfisik-tanda_vital_pernapasan" class="form-control form-control-sm" name="MasterPemeriksaanFisik[tanda_vital_pernapasan]" value="" placeholder="Pernapasan">
                                     </div>
                                 </td>
                             </tr>
@@ -41,13 +41,13 @@ use yii\helpers\Url;
                                 <th>Sistolik</th>
                                 <td>
                                     <div class="form-group field-masterpemeriksaanfisik-kepala_kulit_kepala">
-                                        <input type="text" id="masterpemeriksaanfisik-sistolik" class="form-control" name="MasterPemeriksaanFisik[sistolik]" value="0" placeholder="Sistolik">
+                                        <input type="text" id="masterpemeriksaanfisik-sistolik" class="form-control form-control-sm" name="MasterPemeriksaanFisik[sistolik]" value="0" placeholder="Sistolik">
                                     </div>
                                 </td>
                                 <th>Diastolik</th>
                                 <td>
                                     <div class="form-group field-masterpemeriksaanfisik-kepala_rambut">
-                                        <input type="text" id="masterpemeriksaanfisik-diastolik" class="form-control" name="MasterPemeriksaanFisik[diastolik]" value="0" placeholder="Diastolik">
+                                        <input type="text" id="masterpemeriksaanfisik-diastolik" class="form-control form-control-sm" name="MasterPemeriksaanFisik[diastolik]" value="0" placeholder="Diastolik">
                                     </div>
                                 </td>
                             </tr>
@@ -55,7 +55,7 @@ use yii\helpers\Url;
                                 <th>Suhu Badan</th>
                                 <td>
                                     <div class="form-group field-masterpemeriksaanfisik-kepala_kulit_kepala">
-                                        <input type="text" id="masterpemeriksaanfisik-tanda_vital_suhu_badan" class="form-control" name="MasterPemeriksaanFisik[tanda_vital_suhu_badan]" value="36" placeholder="Suhu Badan">
+                                        <input type="text" id="masterpemeriksaanfisik-tanda_vital_suhu_badan" class="form-control form-control-sm" name="MasterPemeriksaanFisik[tanda_vital_suhu_badan]" value="36" placeholder="Suhu Badan">
                                     </div>
                                 </td>
                             </tr>
@@ -71,19 +71,19 @@ use yii\helpers\Url;
             <div class="card-box">
                 <div class="form-group">
                     <h4 class="header-title m-t-0 m-b-30">2. Status Gizi</h4>
-                    <table class="table table-bordered">
+                    <table class="table table-sm tabel-garis-hitam parent-no-margin">
                         <tbody>
                             <tr>
-                                <th>Tinggi Badan</th>
-                                <td>
+                                <th style="width: 20%;">Tinggi Badan</th>
+                                <td style="width: 30%;">
                                     <div class="form-group field-masterpemeriksaanfisik-tingkat_kesadaran_kesadaran">
-                                        <input type="text" id="masterpemeriksaanfisik-status_gizi_tinggi_badan" class="form-control" name="MasterPemeriksaanFisik[status_gizi_tinggi_badan]" value="" placeholder="Tinggi Badan">
+                                        <input type="text" id="masterpemeriksaanfisik-status_gizi_tinggi_badan" class="form-control form-control-sm" name="MasterPemeriksaanFisik[status_gizi_tinggi_badan]" value="" placeholder="Tinggi Badan">
                                     </div>
                                 </td>
-                                <th>Berat Badan</th>
-                                <td>
+                                <th style="width: 20%;">Berat Badan</th>
+                                <td style="width: 30%;">
                                     <div class="form-group field-masterpemeriksaanfisik-tingkat_kesadaran_tampak_kesakitan">
-                                        <input type="text" id="masterpemeriksaanfisik-status_gizi_berat_badan" class="form-control" name="MasterPemeriksaanFisik[status_gizi_berat_badan]" value="" placeholder="Berat Badan">
+                                        <input type="text" id="masterpemeriksaanfisik-status_gizi_berat_badan" class="form-control form-control-sm" name="MasterPemeriksaanFisik[status_gizi_berat_badan]" value="" placeholder="Berat Badan">
                                     </div>
                                 </td>
                             </tr>
@@ -91,13 +91,13 @@ use yii\helpers\Url;
                                 <th>Lingkaran Perut</th>
                                 <td>
                                     <div class="form-group field-masterpemeriksaanfisik-tingkat_kesadaran_kualitas_kontak">
-                                        <input type="text" id="masterpemeriksaanfisik-status_gizi_lingkaran_perut" class="form-control" name="MasterPemeriksaanFisik[status_gizi_lingkaran_perut]" value="" placeholder="Lingkaran Perut">
+                                        <input type="text" id="masterpemeriksaanfisik-status_gizi_lingkaran_perut" class="form-control form-control-sm" name="MasterPemeriksaanFisik[status_gizi_lingkaran_perut]" value="" placeholder="Lingkaran Perut">
                                     </div>
                                 </td>
                                 <th>Lingkaran Lengan</th>
                                 <td>
                                     <div class="form-group field-masterpemeriksaanfisik-tingkat_kesadaran_gangguan_saat_berjalan">
-                                        <input type="text" id="masterpemeriksaanfisik-status_gizi_lingkaran_pinggang" class="form-control" name="MasterPemeriksaanFisik[status_gizi_lingkaran_pinggang]" value="" placeholder="Lingkaran Lengan">
+                                        <input type="text" id="masterpemeriksaanfisik-status_gizi_lingkaran_pinggang" class="form-control form-control-sm" name="MasterPemeriksaanFisik[status_gizi_lingkaran_pinggang]" value="" placeholder="Lingkaran Lengan">
                                     </div>
                                 </td>
                             </tr>
@@ -105,7 +105,7 @@ use yii\helpers\Url;
                                 <th>Imt</th>
                                 <td>
                                     <div class="form-group field-masterpemeriksaanfisik-tingkat_kesadaran_kualitas_kontak">
-                                        <input type="text" id="masterpemeriksaanfisik-status_gizi_imt" class="form-control" name="MasterPemeriksaanFisik[status_gizi_imt]" value="" readonly="">
+                                        <input type="text" id="masterpemeriksaanfisik-status_gizi_imt" class="form-control form-control-sm" name="MasterPemeriksaanFisik[status_gizi_imt]" value="" readonly="">
                                     </div>
                                 </td>
                                 <th>Bentuk Badan</th>
@@ -151,11 +151,11 @@ use yii\helpers\Url;
             <div class="card-box">
                 <div class="form-group">
                     <h4 class="header-title m-t-0 m-b-30">3. Tingkat Kesadaran dan Keadaan Umum</h4>
-                    <table class="table table-bordered">
+                    <table class="table table-sm tabel-garis-hitam parent-no-margin">
                         <tbody>
                             <tr>
-                                <th>Kesadaran</th>
-                                <td>
+                                <th style="width: 20%;">Kesadaran</th>
+                                <td style="width: 30%;">
                                     <div class="form-group field-masterpemeriksaanfisik-tingkat_kesadaran_kesadaran">
                                         <div id="masterpemeriksaanfisik-tingkat_kesadaran_kesadaran" role="radiogroup">
                                             <div class="custom-control custom-radio">
@@ -171,8 +171,8 @@ use yii\helpers\Url;
 
                                     </div>
                                 </td>
-                                <th>Tempat Kesakitan</th>
-                                <td>
+                                <th style="width: 20%;">Tempat Kesakitan</th>
+                                <td style="width: 30%;">
                                     <div class="form-group field-masterpemeriksaanfisik-tingkat_kesadaran_tampak_kesakitan">
                                         <div id="masterpemeriksaanfisik-tingkat_kesadaran_tampak_kesakitan" role="radiogroup">
                                             <div class="custom-control custom-radio">
@@ -235,11 +235,11 @@ use yii\helpers\Url;
             <div class="card-box">
                 <div class="form-group">
                     <h4 class="header-title m-t-0 m-b-30">4. Kelenjar Getah Bening</h4>
-                    <table class="table table-bordered">
+                    <table class="table table-sm tabel-garis-hitam parent-no-margin">
                         <tbody>
                             <tr>
-                                <th>Getah Bening Leher</th>
-                                <td>
+                                <th style="width: 20%;">Getah Bening Leher</th>
+                                <td style="width: 30%;">
                                     <div class="form-group field-masterpemeriksaanfisik-kelenjar_getah_bening_leher">
                                         <div id="masterpemeriksaanfisik-kelenjar_getah_bening_leher" role="radiogroup">
                                             <div class="custom-control custom-radio">
@@ -256,8 +256,8 @@ use yii\helpers\Url;
 
                                     </div>
                                 </td>
-                                <th>Getah Bening Ketiak</th>
-                                <td>
+                                <th style="width: 20%;">Getah Bening Ketiak</th>
+                                <td style="width: 30%;">
                                     <div class="form-group field-masterpemeriksaanfisik-kelenjar_getah_bening_ketiak">
                                         <div id="masterpemeriksaanfisik-kelenjar_getah_bening_ketiak" role="radiogroup">
                                             <div class="custom-control custom-radio">
@@ -325,11 +325,11 @@ use yii\helpers\Url;
             <div class="card-box">
                 <div class="form-group">
                     <h4 class="header-title m-t-0 m-b-30">5. Kepala</h4>
-                    <table class="table table-bordered">
+                    <table class="table table-sm tabel-garis-hitam parent-no-margin">
                         <tbody>
                             <tr>
-                                <th>Tulang</th>
-                                <td>
+                                <th style="width: 20%;">Tulang</th>
+                                <td style="width: 30%;">
                                     <div class="form-group field-masterpemeriksaanfisik-kepala_tulang">
                                         <div id="masterpemeriksaanfisik-kepala_tulang" role="radiogroup">
                                             <div class="custom-control custom-radio">
@@ -346,8 +346,8 @@ use yii\helpers\Url;
 
                                     </div>
                                 </td>
-                                <th>Bentuk Wajah</th>
-                                <td>
+                                <th style="width: 20%;">Bentuk Wajah</th>
+                                <td style="width: 30%;">
                                     <div class="form-group field-masterpemeriksaanfisik-kepala_bentuk_wajah">
                                         <div id="masterpemeriksaanfisik-kepala_bentuk_wajah" role="radiogroup">
                                             <div class="custom-control custom-radio">
@@ -1916,12 +1916,20 @@ use yii\helpers\Url;
     <div class="row">
         <div class="col-lg-12">
             <h4>16. Vertebra</h4>
-            <div class="row">
-                <div class="col-lg-12">
-                    <?= $form->field($model, 'vertebra')->radioList(['Normal' => 'Normal', 'Lordosis' => 'Lordosis', 'Skoliosis' => 'Skoliosis', 'Kiposis' => 'Kiposis',]) ?>
-                    <?= $form->field($model, 'vertebra_lainnya')->textInput(['maxlength' => true,]) ?>
-                </div>
-            </div>
+            <table class="table table-sm tabel-garis-hitam parent-no-margin">
+                <tbody>
+                    <tr>
+                        <td style="width: 20%;">Vertebra</td>
+                        <td style="width: 30%;">
+                            <?= $form->field($model, 'vertebra')->radioList(['Normal' => 'Normal', 'Lordosis' => 'Lordosis', 'Skoliosis' => 'Skoliosis', 'Kiposis' => 'Kiposis',])->label(false) ?>
+                        </td>
+                        <td style="width: 20%;">Vertebra Lainnya</td>
+                        <td style="width: 30%;">
+                            <?= $form->field($model, 'vertebra_lainnya')->textArea(['rows' => 4,])->label(false) ?>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <hr>
@@ -1929,48 +1937,151 @@ use yii\helpers\Url;
         <div class="col-lg-12">
             <h4>17. Tulang / Sendi (Ekstremitas Atas)</h4>
 
-            <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+            <table class="table table-sm tabel-garis-hitam parent-no-margin">
                 <tr>
                     <th>Tulang Bawah Simetris</th>
-                    <td>
+                    <th colspan="4">
                         <?= $form->field($model, 'tulang_atas_simetris')->radioList(['Ya' => "Ya", "Tidak Ada" => "Tidak Ada"])->label(false) ?>
+                    </th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th style="text-align: center; font-weight: bold;" colspan="2">KANAN</th>
+                    <th style="text-align: center; font-weight: bold;" colspan="2">KIRI</th>
+                </tr>
+                <tr>
+                    <td style="width: 40%;">Tulang Atas Gerakan Abduksi Neer</td>
+                    <td style="width: 30%;" colspan="2">
+                        <?= $form->field($model, 'tulang_atas_gerakan_abduksi_neer_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                    <td style="width: 30%;" colspan="2">
+                        <?= $form->field($model, 'tulang_atas_gerakan_abduksi_neer_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
                     </td>
                 </tr>
                 <tr>
-                    <td>
-
-                        <?= $form->field($model, 'tulang_atas_gerakan_abduksi_neer_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'tulang_atas_gerakan_abduksi_hawkin_kanan')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"]) ?>
-                        <?= $form->field($model, 'tulang_atas_gerakan_drop_arm_kanan')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"]) ?>
-                        <?= $form->field($model, 'tulang_atas_gerakan_yergason_kanan')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"]) ?>
-                        <?= $form->field($model, 'tulang_atas_gerakan_speed_kanan')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"]) ?>
-                        <?= $form->field($model, 'tulang_atas_tulang_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'tulang_atas_sensibilitas_kanan')->radioList(['Baik' => 'Baik', 'Tidak Baik']) ?>
-                        <?= $form->field($model, 'tulang_atas_oedem_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
-                        <?= $form->field($model, 'tulang_atas_varises_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
-                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_pin_prick_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_phallent_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_tinnel_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_finskelstein_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'tulang_atas_vaskularisasi_kanan')->radioList(['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik']) ?>
-                        <?= $form->field($model, 'tulang_atas_kelaianan_kukujari_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
+                    <td>Tulang Atas Gerakan Abduksi Hawkin </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_gerakan_abduksi_hawkin_kanan')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"])->label(false) ?>
                     </td>
-                    <td>
-                        <?= $form->field($model, 'tulang_atas_gerakan_abduksi_neer_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'tulang_atas_gerakan_abduksi_hawkin_kiri')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"]) ?>
-                        <?= $form->field($model, 'tulang_atas_gerakan_drop_arm_kiri')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"]) ?>
-                        <?= $form->field($model, 'tulang_atas_gerakan_yergason_kiri')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"]) ?>
-                        <?= $form->field($model, 'tulang_atas_gerakan_speed_kiri')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"]) ?>
-                        <?= $form->field($model, 'tulang_atas_tulang_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'tulang_atas_sensibilitas_kiri')->radioList(['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik']) ?>
-                        <?= $form->field($model, 'tulang_atas_oedem_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
-                        <?= $form->field($model, 'tulang_atas_varises_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
-                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_pin_prick_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_phallent_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_tinnel_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_finskelstein_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'tulang_atas_vaskularisasi_kiri')->radioList(['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik']) ?>
-                        <?= $form->field($model, 'tulang_atas_kelaianan_kukujari_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_gerakan_abduksi_hawkin_kiri')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Atas Gerakan Drop Arm</td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_gerakan_drop_arm_kanan')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_gerakan_drop_arm_kiri')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Atas Gerakan Yergason</td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_gerakan_yergason_kanan')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_gerakan_yergason_kiri')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Atas Gerakan Speed </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_gerakan_speed_kanan')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_gerakan_speed_kiri')->radioList(["Tidak Normal" => "Tidak Normal", "Normal" => "Normal"])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Atas Tulang </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_tulang_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_tulang_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Atas Sensibilitas</td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_sensibilitas_kanan')->radioList(['Baik' => 'Baik', 'Tidak Baik'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_sensibilitas_kiri')->radioList(['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Atas Oedem </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_oedem_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_oedem_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Atas Varises </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_varises_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_varises_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Atas Kekuatan Otot Pin Prick </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_pin_prick_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_pin_prick_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Atas Kekuatan Otot Phallent </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_phallent_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_phallent_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Atas Kekuatan Otot Tinnel </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_tinnel_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_tinnel_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Atas Kekuatan Otot Finskelstein </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_finskelstein_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_kekuatan_otot_finskelstein_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Atas Vaskularisasi </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_vaskularisasi_kanan')->radioList(['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_vaskularisasi_kiri')->radioList(['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Atas Kelaianan Kukujari </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_kelaianan_kukujari_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_atas_kelaianan_kukujari_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada'])->label(false) ?>
                     </td>
                 </tr>
             </table>
@@ -1982,43 +2093,108 @@ use yii\helpers\Url;
         <div class="col-lg-12">
             <h4>18. Tulang / Sendi (Ektremitas Bawah)</h4>
 
-            <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+            <table class="table table-sm tabel-garis-hitam parent-no-margin">
                 <tr>
-                    <th>
-                        Tulang Bawah Simetris
-                    </th>
-                    <td>
+                    <th>Tulang Bawah Simetris</th>
+                    <th colspan="4">
                         <?= $form->field($model, 'tulang_bawah_simetris')->radioList(['Ya' => "Ya", "Tidak Ada" => "Tidak Ada"])->label(false) ?>
+                    </th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th style="text-align: center; font-weight: bold;" colspan="2">KANAN</th>
+                    <th style="text-align: center; font-weight: bold;" colspan="2">KIRI</th>
+                </tr>
+                <tr>
+                    <td style="width: 40%;">Tulang Bawah Laseque </td>
+                    <td style="width: 30%;" colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_laseque_kanan')->radioList(['Normal' => "Normal", "Tidak Normal" => "Tidak Normal"])->label(false) ?>
+                    </td>
+                    <td style="width: 30%;" colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_laseque_kiri')->radioList(['Normal' => "Normal", "Tidak Normal" => "Tidak Normal"])->label(false) ?>
                     </td>
                 </tr>
                 <tr>
-                    <td>
-
-                        <?= $form->field($model, 'tulang_bawah_laseque_kanan')->radioList(['Normal' => "Normal", "Tidak Normal" => "Tidak Normal"]) ?>
-                        <?= $form->field($model, 'tulang_bawah_kernique_kanan')->radioList(['Normal' => "Normal", "Tidak Normal" => "Tidak Normal"]) ?>
-                        <?= $form->field($model, 'tulang_bawah_patrick_kanan')->radioList(['Normal' => "Normal", "Tidak Normal" => "Tidak Normal"]) ?>
-                        <?= $form->field($model, 'tulang_bawah_contrapatrick_kanan')->radioList(['Normal' => "Normal", "Tidak Normal" => "Tidak Normal"]) ?>
-                        <?= $form->field($model, 'tulang_bawah_nyeri_tekanan_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
-                        <?= $form->field($model, 'tulang_bawah_kekuatan_otot_kanan')->radioList(['Tidak Normal' => 'Tidak Normal', 'Normal' => 'Normal']) ?>
-                        <?= $form->field($model, 'tulang_bawah_sensibilitas_kanan')->radioList(['Baik' => 'Baik', 'Tidak Baik']) ?>
-                        <?= $form->field($model, 'tulang_bawah_oedema_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
-                        <?= $form->field($model, 'tulang_bawah_vaskularisasi_kanan')->radioList(['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik']) ?>
-                        <?= $form->field($model, 'tulang_bawah_kelainan_kuku_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
+                    <td>Tulang Bawah Kernique </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_kernique_kanan')->radioList(['Normal' => "Normal", "Tidak Normal" => "Tidak Normal"])->label(false) ?>
                     </td>
-                    <td>
-                        <?= $form->field($model, 'tulang_bawah_laseque_kiri')->radioList(['Normal' => "Normal", "Tidak Normal" => "Tidak Normal"]) ?>
-                        <?= $form->field($model, 'tulang_bawah_kernique_kiri')->radioList(['Normal' => "Normal", "Tidak Normal" => "Tidak Normal"]) ?>
-                        <?= $form->field($model, 'tulang_bawah_patrick_kiri')->radioList(['Normal' => "Normal", "Tidak Normal" => "Tidak Normal"]) ?>
-                        <?= $form->field($model, 'tulang_bawah_contrapatrick_kiri')->radioList(['Normal' => "Normal", "Tidak Normal" => "Tidak Normal"]) ?>
-                        <?= $form->field($model, 'tulang_bawah_nyeri_tekanan_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
-                        <?= $form->field($model, 'tulang_bawah_kekuatan_otot_kiri')->radioList(['Tidak Normal' => 'Tidak Normal', 'Normal' => 'Normal']) ?>
-                        <?= $form->field($model, 'tulang_bawah_sensibilitas_kiri')->radioList(['Baik' => 'Baik', 'Tidak Baik']) ?>
-                        <?= $form->field($model, 'tulang_bawah_oedema_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
-                        <?= $form->field($model, 'tulang_bawah_vaskularisasi_kiri')->radioList(['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik']) ?>
-                        <?= $form->field($model, 'tulang_bawah_kelainan_kuku_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_kernique_kiri')->radioList(['Normal' => "Normal", "Tidak Normal" => "Tidak Normal"])->label(false) ?>
                     </td>
                 </tr>
-
+                <tr>
+                    <td>Tulang Bawah Patrick </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_patrick_kanan')->radioList(['Normal' => "Normal", "Tidak Normal" => "Tidak Normal"])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_patrick_kiri')->radioList(['Normal' => "Normal", "Tidak Normal" => "Tidak Normal"])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Bawah Contrapatrick </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_contrapatrick_kanan')->radioList(['Normal' => "Normal", "Tidak Normal" => "Tidak Normal"])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_contrapatrick_kiri')->radioList(['Normal' => "Normal", "Tidak Normal" => "Tidak Normal"])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Bawah Nyeri Tekanan </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_nyeri_tekanan_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_nyeri_tekanan_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Bawah Kekuatan Otot</td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_kekuatan_otot_kanan')->radioList(['Tidak Normal' => 'Tidak Normal', 'Normal' => 'Normal'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_kekuatan_otot_kiri')->radioList(['Tidak Normal' => 'Tidak Normal', 'Normal' => 'Normal'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Bawah Sensibilitas </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_sensibilitas_kanan')->radioList(['Baik' => 'Baik', 'Tidak Baik'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_sensibilitas_kiri')->radioList(['Baik' => 'Baik', 'Tidak Baik'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Bawah Oedema </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_oedema_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_oedema_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Bawah Vaskularisasi </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_vaskularisasi_kanan')->radioList(['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_vaskularisasi_kiri')->radioList(['Baik' => 'Baik', 'Tidak Baik' => 'Tidak Baik'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tulang Bawah Kelainan Kuku </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_kelainan_kuku_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'tulang_bawah_kelainan_kuku_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada'])->label(false) ?>
+                    </td>
+                </tr>
             </table>
         </div>
     </div>
@@ -2026,17 +2202,37 @@ use yii\helpers\Url;
     <div class="row">
         <div class="col-lg-12">
             <h4>19. Otot Motorik</h4>
-            <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+            <table class="table table-sm tabel-garis-hitam parent-no-margin">
                 <tr>
-                    <td>
-                        <?= $form->field($model, 'otot_motorik_trofi_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'otot_motorik_tonus_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'otot_motorik_gerakan_abnormal_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
+                    <th></th>
+                    <th style="text-align: center; font-weight: bold;" colspan="2">KANAN</th>
+                    <th style="text-align: center; font-weight: bold;" colspan="2">KIRI</th>
+                </tr>
+                <tr>
+                    <td style="width: 40%;">Otot Motorik Trofi</td>
+                    <td style="width: 30%;" colspan="2">
+                        <?= $form->field($model, 'otot_motorik_trofi_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
                     </td>
-                    <td>
-                        <?= $form->field($model, 'otot_motorik_trofi_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'otot_motorik_tonus_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'otot_motorik_gerakan_abnormal_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada']) ?>
+                    <td style="width: 30%;" colspan="2">
+                        <?= $form->field($model, 'otot_motorik_trofi_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Otot Motorik Tonus </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'otot_motorik_tonus_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'otot_motorik_tonus_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Otot Motorik Tonus </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'otot_motorik_gerakan_abnormal_kanan')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'otot_motorik_gerakan_abnormal_kiri')->radioList(['Tidak Ada' => 'Tidak Ada', 'Ada' => 'Ada'])->label(false) ?>
                     </td>
                 </tr>
             </table>
@@ -2047,15 +2243,28 @@ use yii\helpers\Url;
     <div class="row">
         <div class="col-lg-12">
             <h4>20. Fungsi Sensorik dan Autonom</h4>
-            <table class="table table-sm tabel-telinga tabel-garis-hitam parent-no-margin">
+            <table class="table table-sm tabel-garis-hitam parent-no-margin">
                 <tr>
-                    <td>
-                        <?= $form->field($model, 'fungsi_sensorik_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'fungsi_autonom_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
+                    <th></th>
+                    <th style="text-align: center; font-weight: bold;" colspan="2">KANAN</th>
+                    <th style="text-align: center; font-weight: bold;" colspan="2">KIRI</th>
+                </tr>
+                <tr>
+                    <td style="width: 40%;">Fungsi Sensorik</td>
+                    <td style="width: 30%;" colspan="2">
+                        <?= $form->field($model, 'fungsi_sensorik_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
                     </td>
-                    <td>
-                        <?= $form->field($model, 'fungsi_sensorik_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
-                        <?= $form->field($model, 'fungsi_autonom_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal']) ?>
+                    <td style="width: 30%;" colspan="2">
+                        <?= $form->field($model, 'fungsi_sensorik_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fungsi Autonom </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'fungsi_autonom_kanan')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
+                    </td>
+                    <td colspan="2">
+                        <?= $form->field($model, 'fungsi_autonom_kiri')->radioList(['Normal' => 'Normal', 'Tidak Normal' => 'Tidak Normal'])->label(false) ?>
                     </td>
                 </tr>
             </table>
